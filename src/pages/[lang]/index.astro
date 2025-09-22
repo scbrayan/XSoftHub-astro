@@ -1,0 +1,71 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/sections/Hero.astro";
+import FunFact from "../../components/sections/FunFact.astro";
+import Innovation from "../../components/sections/Innovation.astro";
+import Services from "../../components/sections/Services.astro";
+import Portfolio from "../../components/sections/Portfolio.astro";
+import VideoSection from "../../components/sections/VideoSection.astro";
+import Team from "../../components/sections/Team.astro";
+import Testimonials from "../../components/sections/Testimonials.astro";
+import Blog from "../../components/sections/Blog.astro";
+import Partners from "../../components/sections/Partners.astro";
+import Contact from "../../components/sections/Contact.astro";
+import { getStaticPaths, useTranslations } from "../../i18n/utils";
+import type { SupportedLanguage } from "../../types";
+
+export { getStaticPaths };
+
+const { lang } = Astro.params;
+const currentLang = lang as SupportedLanguage;
+const t = useTranslations(currentLang);
+---
+
+<Layout title={t("site.title")} lang={currentLang}>
+  <Hero lang={currentLang} />
+  <FunFact lang={currentLang} />
+  <Innovation lang={currentLang} />
+  <Services lang={currentLang} />
+  <Portfolio lang={currentLang} />
+  <VideoSection lang={currentLang} />
+  <Team lang={currentLang} />
+  <!-- <Testimonials lang={currentLang} /> -->
+
+  <!-- <Blog lang={currentLang} /> -->
+
+  <Partners lang={currentLang} />
+
+  <Contact lang={currentLang} />
+
+  <!-- Scroll up button -->
+  <span class="cs-scrollup">
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z"
+        fill="currentColor"></path>
+    </svg>
+  </span>
+
+  <!-- Start Video Popup -->
+  <div class="cs-video_popup">
+    <div class="cs-video_popup_overlay"></div>
+    <div class="cs-video_popup_content">
+      <div class="cs-video_popup_layer"></div>
+      <div class="cs-video_popup_container">
+        <div class="cs-video_popup_align">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="about:blank"></iframe>
+          </div>
+        </div>
+        <div class="cs-video_popup_close"></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Video Popup -->
+</Layout>

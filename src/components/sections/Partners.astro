@@ -1,0 +1,36 @@
+---
+// Partners section component with moving text and logos
+import { useTranslations } from "../../i18n/utils";
+import type { ComponentProps } from "../../types";
+
+interface Props extends ComponentProps {}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<!-- Start Moving Text -->
+<div class="cs-moving_text_wrap cs-bold cs-primary_font">
+  <div class="cs-moving_text_in">
+    <div class="cs-moving_text">{t("partners.title")}</div>
+    <div class="cs-moving_text">{t("partners.title")}</div>
+  </div>
+</div>
+<div class="cs-height_100 cs-height_lg_70"></div>
+
+<!-- Start Partner Logo -->
+<!-- <div class="container">
+  <div class="cs-partner_logo_wrap">
+    <div class="cs-partner_logo">
+      <img src="/assets/img/partner_AllTrails.png" alt="Partner" />
+    </div>
+    <div class="cs-partner_logo">
+      <img src="/assets/img/partner-Coinpay.png" alt="Partner" />
+    </div>
+    <div class="cs-partner_logo">
+      <img src="/assets/img/partner_LatamWin.png" alt="Partner" />
+    </div>
+  </div>
+</div> -->
+<!-- End Partner Logo -->
+<div class="cs-height_130 cs-height_lg_70"></div>

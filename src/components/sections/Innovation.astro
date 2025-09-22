@@ -1,0 +1,32 @@
+---
+// Innovation section component
+import { useTranslations } from '../../i18n/utils';
+import DecorativeShape from '../DecorativeShape.astro';
+import type { ComponentProps } from '../../types';
+
+interface Props extends ComponentProps {}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<!-- Start Innovation Section -->
+<section class="cs-gradient_bg_1 cs-shape_wrap_3 cs-parallax">
+  <DecorativeShape />
+  <div class="cs-height_100 cs-height_lg_120"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="cs-section_heading cs-style1 text-center">
+          <h3 class="cs-section_subtitle wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">{t('innovation.subtitle')}</h3>
+          <h2 class="cs-section_title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">{t('innovation.title')}</h2>
+          <div class="cs-height_30 cs-height_lg_20"></div>
+          <p class="cs-m0 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">{t('innovation.description')}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="cs-height_150 cs-height_lg_80"></div>
+</section>
+<!-- End Innovation Section -->

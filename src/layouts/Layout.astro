@@ -1,0 +1,170 @@
+---
+import type { LayoutProps } from "../types";
+import Header from "../components/Header.astro";
+import Footer from "../components/sections/Footer.astro";
+
+export interface Props extends LayoutProps {
+  title: string;
+  author?: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "XSoftHub consultants - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial.",
+  author = "XSoftHub",
+  lang = "es",
+} = Astro.props;
+
+// SEO Keywords and description based on language
+const keywords =
+  lang === "es"
+    ? "desarrollo web, diseño UI/UX, marketing digital, consultoría tecnológica, React, WordPress, SEO, SEM, inteligencia artificial, IA, cloud computing, DevOps, desarrollo de software, aplicaciones web, diseño responsive, optimización web, automatización, sistemas empresariales"
+    : "web development, UI/UX design, digital marketing, technology consulting, React, WordPress, SEO, SEM, artificial intelligence, AI, cloud computing, DevOps, software development, web applications, responsive design, web optimization, automation, enterprise systems";
+
+const seoDescription =
+  description ===
+  "XSoftHub consultants - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial."
+    ? lang === "es"
+      ? "XSoftHub consultants - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial. Transformamos ideas en realidad digital."
+      : "XSoftHub consultants - Technology consultants specialized in web development, UI/UX design, digital marketing and artificial intelligence solutions. We transform ideas into digital reality."
+    : description;
+
+// URL base definitiva
+const baseUrl = "https://xsofthub.com";
+
+// Remover el prefijo de idioma para obtener la ruta base
+const currentPath = Astro.url.pathname;
+const pathWithoutLang = currentPath.replace(/^\/(es|en)/, "") || "/";
+
+// URLs para cada idioma
+const esUrl = `${baseUrl}/es${pathWithoutLang}`;
+const enUrl = `${baseUrl}/en${pathWithoutLang}`;
+const canonicalUrl = lang === "es" ? esUrl : enUrl;
+---
+
+<!doctype html>
+<html class="no-js" lang={lang}>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content={author} />
+    <meta name="description" content={seoDescription} />
+    <meta name="keywords" content={keywords} />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content={lang === "es" ? "Spanish" : "English"} />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="distribution" content="global" />
+    <meta name="rating" content="general" />
+
+    <!-- SEO: Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- SEO: Hreflang Tags -->
+    <link rel="alternate" hreflang="es" href={esUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={esUrl} />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={seoDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang === "es" ? "es_ES" : "en_US"} />
+    <meta
+      property="og:locale:alternate"
+      content={lang === "es" ? "en_US" : "es_ES"}
+    />
+    <meta property="og:site_name" content="XSoftHub consultants" />
+    <meta
+      property="og:image"
+      content={`${baseUrl}/assets/img/logos/xsofthub-consults.png`}
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="XSoftHub consultants - Technology Consultants"
+    />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={seoDescription} />
+    <meta
+      name="twitter:image"
+      content={`${baseUrl}/assets/img/logos/xsofthub-consults.png`}
+    />
+    <meta
+      name="twitter:image:alt"
+      content="XSoftHub consultants - Technology Consultants"
+    />
+    <meta name="twitter:site" content="@xsofthub" />
+    <meta name="twitter:creator" content="@xsofthub" />
+
+    <!-- Favicon Icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/img/logos/xsofthub-consults-icon.png"
+    />
+
+    <!-- Site Title -->
+    <title>{title}</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/lightgallery.min.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/slick.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/animate.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="cs-preloader cs-center">
+      <div class="cs-preloader_in"></div>
+    </div>
+
+    <!-- Header -->
+    <Header lang={lang} />
+
+    <!-- Main Content -->
+    <slot />
+
+    <!-- Footer -->
+    <Footer lang={lang} />
+
+    <!-- Cursor Elements -->
+    <span class="cs-cursor_lg d"></span>
+    <span class="cs-cursor_sm"></span>
+
+    <!-- Video Popup -->
+    <div class="cs-video_popup">
+      <div class="cs-video_popup_overlay"></div>
+      <div class="cs-video_popup_content">
+        <div class="cs-video_popup_layer"></div>
+        <div class="cs-video_popup_container">
+          <div class="cs-video_popup_align">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="about:blank"></iframe>
+            </div>
+          </div>
+          <div class="cs-video_popup_close"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script is:inline src="/assets/js/plugins/jquery-3.6.0.min.js"></script>
+    <script is:inline src="/assets/js/plugins/isotope.pkg.min.js"></script>
+    <script is:inline src="/assets/js/plugins/jquery.slick.min.js"></script>
+    <script is:inline src="/assets/js/plugins/jquery.counter.min.js"></script>
+    <script is:inline src="/assets/js/plugins/lightgallery.min.js"></script>
+    <script is:inline src="/assets/js/plugins/wow.min.js"></script>
+    <script is:inline src="/assets/js/plugins/gsap.min.js"></script>
+    <script is:inline src="/assets/js/main.js"></script>
+  </body>
+</html>

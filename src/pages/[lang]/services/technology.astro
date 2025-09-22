@@ -1,0 +1,53 @@
+---
+import ServicePage from '../../../components/ServicePage.astro';
+import { getStaticPaths } from '../../../i18n/utils';
+import type { SupportedLanguage } from '../../../types';
+
+export { getStaticPaths };
+
+const { lang } = Astro.params;
+const currentLang = lang as SupportedLanguage;
+
+const content = {
+  es: {
+    title: 'Tecnología',
+    subtitle: 'Soluciones tecnológicas innovadoras para tu empresa',
+    description: 'Ofrecemos consultoría tecnológica integral y desarrollo de soluciones personalizadas que transforman la manera en que tu empresa opera. Desde arquitecturas cloud hasta inteligencia artificial, nuestro equipo de expertos en tecnología diseña e implementa sistemas robustos, seguros y escalables que impulsan la innovación y optimizan los procesos empresariales.',
+    features: [
+      'Consultoría en arquitectura de software',
+      'Desarrollo de APIs y microservicios',
+      'Soluciones cloud (AWS, Azure, GCP)',
+      'Integración de sistemas empresariales',
+      'Implementación de IA y Machine Learning',
+      'DevOps y automatización de procesos',
+      'Ciberseguridad y auditorías técnicas'
+    ]
+  },
+  en: {
+    title: 'Technology',
+    subtitle: 'Innovative technology solutions for your business',
+    description: 'We offer comprehensive technology consulting and custom solution development that transforms the way your company operates. From cloud architectures to artificial intelligence, our team of technology experts designs and implements robust, secure and scalable systems that drive innovation and optimize business processes.',
+    features: [
+      'Software architecture consulting',
+      'API and microservices development',
+      'Cloud solutions (AWS, Azure, GCP)',
+      'Enterprise systems integration',
+      'AI and Machine Learning implementation',
+      'DevOps and process automation',
+      'Cybersecurity and technical audits'
+    ]
+  }
+};
+
+const serviceContent = content[currentLang];
+---
+
+<ServicePage 
+  lang={currentLang}
+  title={serviceContent.title}
+  subtitle={serviceContent.subtitle}
+  description={serviceContent.description}
+  features={serviceContent.features}
+  image="/assets/img/service_4.jpeg"
+  imageAlt="Technology Service"
+/>

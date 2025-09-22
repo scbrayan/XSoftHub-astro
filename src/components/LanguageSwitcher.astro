@@ -1,0 +1,169 @@
+---
+import { languages, defaultLang } from '../i18n/ui';
+import type { ComponentProps } from '../types';
+
+interface Props extends ComponentProps {}
+
+const { lang } = Astro.props;
+
+// Mapeo de códigos de idioma a iconos de banderas
+const languageFlags = {
+  es: '🇪🇸',
+  en: '🇺🇸'
+};
+---
+
+<div class="cs-language_switcher">
+  <div class="cs-switcher_container">
+    {Object.entries(languages).map(([langCode, langName]) => (
+      <a 
+        href={langCode === defaultLang ? '/' : `/${langCode}/`}
+        class={`cs-lang_link ${lang === langCode ? 'cs-active' : ''}`}
+        title={`Switch to ${langName}`}
+      >
+        <span class="cs-flag">{languageFlags[langCode as keyof typeof languageFlags]}</span>
+        <span class="cs-lang_text">{langName}</span>
+        <div class="cs-ripple"></div>
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+  .cs-language_switcher {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .cs-switcher_container {
+    display: flex;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 4px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .cs-switcher_container:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .cs-lang_link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 46px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    min-width: 80px;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .cs-lang_link:hover {
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .cs-lang_link.cs-active {
+    background: linear-gradient(135deg, #FF4A17 0%, #FF6B47 100%);
+    color: white;
+    box-shadow: 0 4px 20px rgba(255, 74, 23, 0.4);
+    transform: scale(1.02);
+  }
+  
+  .cs-flag {
+    font-size: 16px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+  }
+  
+  .cs-lang_link:hover .cs-flag {
+    transform: scale(1.2) rotate(5deg);
+  }
+  
+  .cs-lang_text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .cs-ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+    pointer-events: none;
+  }
+  
+  .cs-lang_link:active .cs-ripple {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Efecto de brillo en hover */
+  .cs-lang_link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+  
+  .cs-lang_link:hover::before {
+    left: 100%;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .cs-switcher_container {
+      padding: 2px;
+    }
+    
+    .cs-lang_link {
+      padding: 8px 12px;
+      min-width: 60px;
+      gap: 6px;
+    }
+    
+    .cs-lang_text {
+      font-size: 12px;
+    }
+    
+    .cs-flag {
+      font-size: 14px;
+    }
+  }
+  
+  /* Modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    .cs-switcher_container {
+      background: rgba(0, 0, 0, 0.3);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .cs-lang_link {
+      color: rgba(255, 255, 255, 0.9);
+    }
+  }
+</style>

@@ -1,0 +1,89 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ContactSection from "../../components/sections/Contact.astro";
+import { getStaticPaths, useTranslations } from "../../i18n/utils";
+import type { SupportedLanguage } from "../../types";
+
+export { getStaticPaths };
+
+const { lang } = Astro.params;
+const currentLang = lang as SupportedLanguage;
+const t = useTranslations(currentLang);
+
+// Contact page configuration
+const title = t("nav.contact");
+const backgroundImage = "/assets/img/hero_bg.jpeg"; // Fallback to default
+---
+
+<Layout title={`${title} - XSoftHub`} lang={currentLang}>
+  <!-- Contact Hero Section -->
+  <section
+    class="cs-page_head cs-bg"
+    style={`background-image: url('${backgroundImage}');`}
+  >
+    <div class="container">
+      <div class="cs-page_head_in">
+        <h1 class="cs-page_title">{title}</h1>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-height_70 cs-height_lg_50"></div>
+
+  <ContactSection lang={currentLang} />
+</Layout>
+
+<style>
+  /* Hero Section Styles */
+  .cs-page_head {
+    padding: 110px 0 40px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .cs-page_head::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .cs-page_head_in {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+  }
+
+  .cs-page_title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .cs-page_head {
+      padding: 80px 0 60px;
+    }
+
+    .cs-page_title {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cs-page_head {
+      padding: 60px 0 40px;
+    }
+
+    .cs-page_title {
+      font-size: 24px;
+    }
+  }
+</style>

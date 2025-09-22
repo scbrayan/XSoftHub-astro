@@ -1,0 +1,77 @@
+---
+// FunFact/Stats section component
+import { useTranslations } from "../../i18n/utils";
+import type { ComponentProps } from "../../types";
+
+interface Props extends ComponentProps {}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<!-- Start FunFact -->
+<section>
+  <div class="container">
+    <div class="cs-funfact_wrap cs-type1">
+      <div class="cs-funfact_shape" data-src="/assets/img/funfact_shape_bg.svg">
+      </div>
+      <div class="cs-funfact_left">
+        <div class="cs-funfact_heading">
+          <h2>{t("funfact.title")}</h2>
+          <p>{t("funfact.description")}</p>
+        </div>
+      </div>
+      <div class="cs-funfact_right">
+        <div class="cs-funfacts">
+          <div class="cs-funfact cs-style1">
+            <div
+              class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color"
+              style="white-space: nowrap;"
+            >
+              <span data-count-to="400" class="odometer"></span><span>K</span>
+            </div>
+            <div class="cs-funfact_text">
+              <span class="cs-accent_color">+</span>
+              <p>{t("funfact.clients")}</p>
+            </div>
+          </div>
+          <div class="cs-funfact cs-style1">
+            <div
+              class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color"
+              style="white-space: nowrap;"
+            >
+              <span data-count-to="100" class="odometer"></span><span></span>
+            </div>
+            <div class="cs-funfact_text">
+              <span class="cs-accent_color">+</span>
+              <p>{t("funfact.projects")}</p>
+            </div>
+          </div>
+          <div class="cs-funfact cs-style1">
+            <div
+              class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color"
+            >
+              <span data-count-to="10" class="odometer"></span>
+            </div>
+            <div class="cs-funfact_text">
+              <span class="cs-accent_color">+</span>
+              <p>{t("funfact.team")}</p>
+            </div>
+          </div>
+          <!-- <div class="cs-funfact cs-style1">
+            <div class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
+              <span data-count-to="10" class="odometer"></span>
+            </div>
+            <div class="cs-funfact_text">
+              <span class="cs-accent_color">+</span>
+              <p>{t('funfact.products')}</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="cs-height_150 cs-height_lg_80"></div>
+
+<!-- End FunFact -->

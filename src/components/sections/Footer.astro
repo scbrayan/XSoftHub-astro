@@ -1,0 +1,91 @@
+---
+// Footer component
+import { useTranslations } from "../../i18n/utils";
+import type { ComponentProps } from "../../types";
+
+interface Props extends ComponentProps {}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const currentYear = new Date().getFullYear();
+---
+
+<!-- Start Footer -->
+<footer class="cs-fooer">
+    <div class="cs-fooer_main">
+        <div class="container" id="contact">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-footer_item">
+                        <div class="cs-text_widget">
+                            <img
+                                src="/assets/img/logos/xsofthub-consults.png"
+                                alt="XSoftHub consultants"
+                            />
+                            <p>{t("contact.footer.welcome")}</p>
+                        </div>
+                        <div class="cs-social_btns cs-style1"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-footer_item">
+                        <h2 class="cs-widget_title">
+                            {t("contact.footer.services.title")}
+                        </h2>
+                        <ul class="cs-menu_widget cs-mp0">
+                            <li>
+                                <a href="">{t("contact.footer.services.ui")}</a>
+                            </li>
+                            <li>
+                                <a href="">{t("contact.footer.services.wp")}</a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    >{t("contact.footer.services.marketing")}</a
+                                >
+                            </li>
+                            <li>
+                                <a href=""
+                                    >{t("contact.footer.services.react")}</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-footer_item">
+                        <h2 class="cs-widget_title">
+                            {t("contact.footer.contact.title")}
+                        </h2>
+                        <ul class="cs-menu_widget cs-mp0">
+                            <li>San José, Costa Rica</li>
+                            <!-- <li>+506 -------</li> -->
+                            <li>info@xsofthub.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <!-- Additional content can be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cs-bottom_footer" style="justify-content: center;">
+            <div class="cs-copyright">Copyright © {currentYear}.</div>
+            <!-- 
+      <div class="cs-bottom_footer_right">
+        <ul class="cs-footer_links cs-mp0">
+          <li>
+            <a href="">{t('contact.footer.terms')}</a>
+          </li>
+          <li>
+            <a href="">{t('contact.footer.privacy')}</a>
+          </li>
+        </ul>
+      </div>
+      -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
