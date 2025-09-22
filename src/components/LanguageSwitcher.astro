@@ -11,13 +11,26 @@ const languageFlags = {
   es: '🇪🇸',
   en: '🇺🇸'
 };
+
+// Obtener la ruta actual
+const currentPath = Astro.url.pathname;
+
+// Función para cambiar solo el idioma en la URL
+function buildLanguageUrl(langCode: string): string {
+  // Si la ruta actual tiene un idioma, lo reemplazamos
+  if (/^\/[a-z]{2}(\/|$)/.test(currentPath)) {
+    return currentPath.replace(/^\/[a-z]{2}/, `/${langCode}`);
+  }
+  // Si no tiene idioma, agregamos el nuevo idioma
+  return `/${langCode}${currentPath}`;
+}
 ---
 
 <div class="cs-language_switcher">
   <div class="cs-switcher_container">
     {Object.entries(languages).map(([langCode, langName]) => (
       <a 
-        href={langCode === defaultLang ? '/' : `/${langCode}/`}
+        href={buildLanguageUrl(langCode)}
         class={`cs-lang_link ${lang === langCode ? 'cs-active' : ''}`}
         title={`Switch to ${langName}`}
       >

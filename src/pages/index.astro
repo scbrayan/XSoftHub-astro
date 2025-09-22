@@ -1,4 +1,29 @@
 ---
-// Este archivo es solo para redirección automática al idioma por defecto
-// Astro automáticamente redirige desde "/" hacia "/es/" cuando prefixDefaultLocale: true
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import FunFact from "../components/sections/FunFact.astro";
+import Innovation from "../components/sections/Innovation.astro";
+import Services from "../components/sections/Services.astro";
+import Portfolio from "../components/sections/Portfolio.astro";
+import VideoSection from "../components/sections/VideoSection.astro";
+import Team from "../components/sections/Team.astro";
+import Testimonials from "../components/sections/Testimonials.astro";
+import Blog from "../components/sections/Blog.astro";
+import Partners from "../components/sections/Partners.astro";
+import Contact from "../components/sections/Contact.astro";
+import {
+  getStaticPaths,
+  useTranslations,
+  resolveLanguage,
+} from "../i18n/utils";
+import type { SupportedLanguage } from "../types";
+
+import IndexComp from "./[lang]/index.astro";
+
+export { getStaticPaths };
+
+// Resolver idioma con fallback al navegador
+const currentLang = resolveLanguage(Astro.params, Astro.request);
 ---
+
+<IndexComp lang={currentLang} />

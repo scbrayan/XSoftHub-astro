@@ -12,12 +12,17 @@ import Blog from "../../components/sections/Blog.astro";
 import Partners from "../../components/sections/Partners.astro";
 import Contact from "../../components/sections/Contact.astro";
 import { getStaticPaths, useTranslations } from "../../i18n/utils";
-import type { SupportedLanguage } from "../../types";
+import type { SupportedLanguage, ComponentProps } from "../../types";
 
 export { getStaticPaths };
 
-const { lang } = Astro.params;
-const currentLang = lang as SupportedLanguage;
+// Interface para props del componente
+interface Props extends ComponentProps {}
+
+// Obtener idioma de props o params (para compatibilidad)
+const { lang: propLang } = Astro.props;
+const { lang: paramLang } = Astro.params;
+const currentLang = (propLang || paramLang) as SupportedLanguage;
 const t = useTranslations(currentLang);
 ---
 
