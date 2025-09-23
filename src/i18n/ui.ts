@@ -24,7 +24,7 @@ export const ui = {
     'header.menu.open': 'Abrir menú',
     'header.menu.close': 'Cerrar menú',
     'hero.title': 'El éxito del mañana es innovar ahora !',
-    'hero.subtitle': 'En XSoftHub consultants, transformamos tu visión en realidad digital a través de tecnología de vanguardia. Nuestro equipo de expertos desarrolladores y consultores tecnológicos se especializa en soluciones potenciadas por IA, infraestructura robusta y sistemas a medida que impulsan el crecimiento de tu negocio. Desde aplicaciones web inteligentes hasta plataformas empresariales e infraestructura tecnológica, diseñamos tecnología que marca una verdadera diferencia.',
+    'hero.subtitle': 'En XSoftHub Ventures, transformamos tu visión en realidad digital a través de tecnología de vanguardia. Nuestro equipo de expertos desarrolladores y consultores tecnológicos se especializa en soluciones potenciadas por IA, infraestructura robusta y sistemas a medida que impulsan el crecimiento de tu negocio. Desde aplicaciones web inteligentes hasta plataformas empresariales e infraestructura tecnológica, diseñamos tecnología que marca una verdadera diferencia.',
     'hero.cta': 'Obtener Cotización',
     'hero.social.title': 'Síguenos',
 
@@ -37,7 +37,7 @@ export const ui = {
 
     'innovation.subtitle': 'El Futuro es Ahora',
     'innovation.title': 'La innovación tecnológica no se detiene, ¿y tú?',
-    'innovation.description': 'Vivimos en una era donde la inteligencia artificial revoluciona industrias enteras, donde la computación en la nube democratiza el acceso a tecnologías avanzadas, y donde la automatización transforma procesos que antes tomaban días en segundos. Cada día surgen nuevas herramientas, frameworks y soluciones que pueden catapultar tu negocio hacia el éxito. La pregunta no es si la tecnología avanzará, sino si tu empresa estará preparada para aprovechar estas oportunidades. En XSoftHub consultants, no vemos la tecnología como un obstáculo complejo, sino como el puente hacia un futuro más eficiente, rentable y competitivo. ¿Estás listo para dar el salto?',
+    'innovation.description': 'Vivimos en una era donde la inteligencia artificial revoluciona industrias enteras, donde la computación en la nube democratiza el acceso a tecnologías avanzadas, y donde la automatización transforma procesos que antes tomaban días en segundos. Cada día surgen nuevas herramientas, frameworks y soluciones que pueden catapultar tu negocio hacia el éxito. La pregunta no es si la tecnología avanzará, sino si tu empresa estará preparada para aprovechar estas oportunidades. En XSoftHub Ventures, no vemos la tecnología como un obstáculo complejo, sino como el puente hacia un futuro más eficiente, rentable y competitivo. ¿Estás listo para dar el salto?',
     'innovation.feature1.title': 'Innovación Continua',
     'innovation.feature1.description': 'Implementamos las últimas tecnologías para mantener tu empresa a la vanguardia del mercado.',
     'innovation.feature2.title': 'Soluciones Escalables',
@@ -77,7 +77,7 @@ export const ui = {
 
     'contact.cta.title': 'Hagamos algo <i>maravilloso</i> juntos',
     'contact.cta.button': 'Contáctanos',
-    'contact.footer.welcome': '¡Bienvenido a XSoftHub consultants!',
+    'contact.footer.welcome': '¡Bienvenido a XSoftHub Ventures!',
     'contact.footer.services.title': 'Servicios',
     'contact.footer.services.ui': 'Diseño UI/UX',
     'contact.footer.services.wp': 'Desarrollo WP',
@@ -106,7 +106,7 @@ export const ui = {
     '404.contact.button': 'Contáctanos',
   },
   en: {
-    'site.title': 'XSoftHub - consultants',
+    'site.title': 'XSoftHub - Ventures',
     'nav.home': 'Home',
     'nav.about': 'About',
     'nav.services': 'Services',
@@ -123,7 +123,7 @@ export const ui = {
     'header.menu.open': 'Open menu',
     'header.menu.close': 'Close menu',
     'hero.title': 'Tomorrow\'s success is innovating now !',
-    'hero.subtitle': 'At XSoftHub consultants, we transform your vision into digital reality through cutting-edge technology. Our team of expert developers and technology consultants specializes in AI-powered solutions, robust infrastructure, and custom-tailored systems that drive your business growth. From intelligent web applications to enterprise-grade platforms and technological infrastructure, we design technology that makes a real difference.',
+    'hero.subtitle': 'At XSoftHub Ventures, we transform your vision into digital reality through cutting-edge technology. Our team of expert developers and technology Ventures specializes in AI-powered solutions, robust infrastructure, and custom-tailored systems that drive your business growth. From intelligent web applications to enterprise-grade platforms and technological infrastructure, we design technology that makes a real difference.',
     'hero.cta': 'Get a Quote',
     'hero.social.title': 'Follow Us',
 
@@ -136,7 +136,7 @@ export const ui = {
 
     'innovation.subtitle': 'The Future is Now',
     'innovation.title': 'Technological innovation never stops, do you?',
-    'innovation.description': 'We live in an era where artificial intelligence revolutionizes entire industries, where cloud computing democratizes access to advanced technologies, and where automation transforms processes that once took days into seconds. Every day new tools, frameworks, and solutions emerge that can catapult your business to success. The question is not whether technology will advance, but whether your company will be ready to seize these opportunities. At XSoftHub consultants, we don\'t see technology as a complex obstacle, but as the bridge to a more efficient, profitable, and competitive future. Are you ready to take the leap?',
+    'innovation.description': 'We live in an era where artificial intelligence revolutionizes entire industries, where cloud computing democratizes access to advanced technologies, and where automation transforms processes that once took days into seconds. Every day new tools, frameworks, and solutions emerge that can catapult your business to success. The question is not whether technology will advance, but whether your company will be ready to seize these opportunities. At XSoftHub Ventures, we don\'t see technology as a complex obstacle, but as the bridge to a more efficient, profitable, and competitive future. Are you ready to take the leap?',
     'innovation.feature1.title': 'Continuous Innovation',
     'innovation.feature1.description': 'We implement the latest technologies to keep your company at the forefront of the market.',
     'innovation.feature2.title': 'Scalable Solutions',
@@ -177,7 +177,7 @@ export const ui = {
 
     'contact.cta.title': 'Let\'s make something <i>cool</i> together',
     'contact.cta.button': 'Contact Us',
-    'contact.footer.welcome': 'Welcome to XSoftHub consultants!',
+    'contact.footer.welcome': 'Welcome to XSoftHub Ventures!',
     'contact.footer.services.title': 'Services',
     'contact.footer.services.ui': 'UI/UX design',
     'contact.footer.services.wp': 'WP development',

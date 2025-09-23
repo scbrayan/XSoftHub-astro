@@ -11,7 +11,7 @@ export interface Props extends LayoutProps {
 
 const {
   title,
-  description = "XSoftHub consultants - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial.",
+  description = "XSoftHub Ventures - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial.",
   author = "XSoftHub",
   lang = "es",
 } = Astro.props;
@@ -24,10 +24,10 @@ const keywords =
 
 const seoDescription =
   description ===
-  "XSoftHub consultants - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial."
+  "XSoftHub Ventures - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial."
     ? lang === "es"
-      ? "XSoftHub consultants - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial. Transformamos ideas en realidad digital."
-      : "XSoftHub consultants - Technology consultants specialized in web development, UI/UX design, digital marketing and artificial intelligence solutions. We transform ideas into digital reality."
+      ? "XSoftHub Ventures - Consultores tecnológicos especializados en desarrollo web, diseño UI/UX, marketing digital y soluciones de inteligencia artificial. Transformamos ideas en realidad digital."
+      : "XSoftHub Ventures - Technology Ventures specialized in web development, UI/UX design, digital marketing and artificial intelligence solutions. We transform ideas into digital reality."
     : description;
 
 // URL base definitiva
@@ -91,7 +91,7 @@ const canonicalUrl = lang === "es" ? esUrl : enUrl;
       property="og:locale:alternate"
       content={lang === "es" ? "en_US" : "es_ES"}
     />
-    <meta property="og:site_name" content="XSoftHub consultants" />
+    <meta property="og:site_name" content="XSoftHub Ventures" />
     <meta
       property="og:image"
       content={`${baseUrl}/assets/img/logos/xsofthub-consults.png`}
@@ -100,7 +100,7 @@ const canonicalUrl = lang === "es" ? esUrl : enUrl;
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="XSoftHub consultants - Technology Consultants"
+      content="XSoftHub Ventures - Technology Consultants"
     />
 
     <!-- Twitter Card Meta Tags -->
@@ -113,7 +113,7 @@ const canonicalUrl = lang === "es" ? esUrl : enUrl;
     />
     <meta
       name="twitter:image:alt"
-      content="XSoftHub consultants - Technology Consultants"
+      content="XSoftHub Ventures - Technology Consultants"
     />
     <meta name="twitter:site" content="@xsofthub" />
     <meta name="twitter:creator" content="@xsofthub" />
