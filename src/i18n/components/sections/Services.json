@@ -1,0 +1,14 @@
+{
+  "es": {
+    "services.subtitle": "Qué Podemos Hacer",
+    "services.title": "Servicios con los que podemos ayudarte",
+    "contact.page.services.title": "Nuestros Servicios",
+    "contact.page.services.subtitle": "¿Cómo podemos ayudarte?"
+  },
+  "en": {
+    "services.subtitle": "What Can We Do",
+    "services.title": "Services we can help you with",
+    "contact.page.services.title": "Our Services",
+    "contact.page.services.subtitle": "How can we help you?"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "es": {
+    "services.ai_agents.title": "Agentes de IA",
+    "services.ai_agents.subtitle": "Inteligencia artificial para soporte y automatización",
+    "services.ai_agents.image": "ai_agents.png",
+    "services.ai_agents.description": "Desarrollamos agentes de inteligencia artificial avanzados que revolucionan tu atención al cliente y automatizan procesos complejos. Nuestros chatbots y asistentes virtuales utilizan procesamiento de lenguaje natural y machine learning para brindar respuestas precisas 24/7. Implementamos soluciones de IA que aprenden continuamente y se adaptan a las necesidades específicas de tu negocio, mejorando la experiencia del usuario y optimizando la eficiencia operacional.",
+    "services.ai_agents.features": [
+      "Chatbots inteligentes con NLP avanzado",
+      "Asistentes virtuales personalizados",
+      "Automatización de atención al cliente",
+      "Integración con sistemas CRM y ERP",
+      "Análisis de sentimientos en tiempo real",
+      "Aprendizaje automático continuo",
+      "Soporte multicanal (web, móvil, redes sociales)",
+      "Reportes y analytics de conversaciones"
+    ]
+  },
+  "en": {
+    "services.ai_agents.title": "AI Agents",
+    "services.ai_agents.subtitle": "Artificial intelligence for support and automation",
+    "services.ai_agents.image": "ai_agents.png",
+    "services.ai_agents.description": "We develop advanced artificial intelligence agents that revolutionize your customer service and automate complex processes. Our chatbots and virtual assistants use natural language processing and machine learning to provide accurate responses 24/7. We implement AI solutions that continuously learn and adapt to your business's specific needs, improving user experience and optimizing operational efficiency.",
+    "services.ai_agents.features": [
+      "Intelligent chatbots with advanced NLP",
+      "Personalized virtual assistants",
+      "Customer service automation",
+      "CRM and ERP system integration",
+      "Real-time sentiment analysis",
+      "Continuous machine learning",
+      "Multi-channel support (web, mobile, social media)",
+      "Conversation reports and analytics"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "es": {
+    "funfact.title": "Muestra de Éxito",
+    "funfact.description": "Nuestro éxito se basa en la excelencia técnica y la satisfacción del cliente. Desarrollamos soluciones de software robustas, sistemas empresariales y consultoría tecnológica que transforman negocios.",
+    "funfact.clients": "Usuarios Finales Globales",
+    "funfact.projects": "Proyectos Completados",
+    "funfact.team": "Miembros del Equipo",
+    "funfact.products": "Productos Digitales"
+  },
+  "en": {
+    "funfact.title": "Showcase of Success",
+    "funfact.description": "Our success is built on technical excellence and client satisfaction. We develop robust software solutions, enterprise systems, and technology consulting that transform businesses.",
+    "funfact.clients": "Global End Users",
+    "funfact.projects": "Project Completed",
+    "funfact.team": "Team Members",
+    "funfact.products": "Digital products"
+  }
+}

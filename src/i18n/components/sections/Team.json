@@ -1,0 +1,26 @@
+{
+  "es": {
+    "team.subtitle": "Nuestro Equipo",
+    "team.title": "Increíbles miembros del equipo",
+    "team.member1.name": "Brayan Saborio",
+    "team.member1.role": "CTO - Tech Lead",
+    "team.member2.name": "Jairo Rodriguez",
+    "team.member2.role": "Full Stack Senior",
+    "team.member3.name": "Miguel Alvarez",
+    "team.member3.role": "Full Stack Senior",
+    "team.member4.name": "Sivianny Prendas",
+    "team.member4.role": "Full Stack Senior"
+  },
+  "en": {
+    "team.subtitle": "Our Team",
+    "team.title": "Awesome team members",
+    "team.member1.name": "Brayan Saborio",
+    "team.member1.role": "CTO - Tech Lead",
+    "team.member2.name": "Jairo Rodriguez",
+    "team.member2.role": "Full Stack Senior",
+    "team.member3.name": "Miguel Alvarez",
+    "team.member3.role": "Full Stack Senior",
+    "team.member4.name": "Sivianny Prendas",
+    "team.member4.role": "Full Stack Senior"
+  }
+}

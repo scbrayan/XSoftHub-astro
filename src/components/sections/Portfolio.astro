@@ -1,65 +1,95 @@
 ---
 // Portfolio/Projects section component
-import { useTranslations } from '../../i18n/utils';
-import type { ComponentProps } from '../../types';
+import { useTranslations } from "../../i18n/utils";
+import type { ComponentProps } from "../../types";
+import { ASSETS_IMG_PORTFOLIO } from "../../utils";
 
 interface Props extends ComponentProps {}
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
+
+const portfolioProjects = [
+  {
+    id: 1,
+    title: t("portfolio.project1"),
+    subtitle: t("portfolio.details"),
+    image: `${ASSETS_IMG_PORTFOLIO}portfolio_1.jpeg`,
+    link: null,
+  },
+  {
+    id: 2,
+    title: t("portfolio.project2"),
+    subtitle: t("portfolio.details"),
+    image: `${ASSETS_IMG_PORTFOLIO}portfolio_2.jpeg`,
+    link: null,
+  },
+  {
+    id: 3,
+    title: t("portfolio.project3"),
+    subtitle: t("portfolio.details"),
+    image: `${ASSETS_IMG_PORTFOLIO}portfolio_3.jpeg`,
+    link: null,
+  },
+];
 ---
 
 <!-- Start Latest Project -->
 <section>
   <div class="container">
     <div class="cs-section_heading cs-style1 text-center">
-      <h3 class="cs-section_subtitle">{t('portfolio.subtitle')}</h3>
-      <h2 class="cs-section_title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"> 
-        {t('portfolio.title')}
+      <h3 class="cs-section_subtitle">{t("portfolio.subtitle")}</h3>
+      <h2
+        class="cs-section_title wow fadeInUp"
+        data-wow-duration="0.8s"
+        data-wow-delay="0.2s"
+      >
+        {t("portfolio.title")}
       </h2>
     </div>
   </div>
   <div class="cs-height_90 cs-height_lg_45"></div>
   <div class="cs-slider cs-style3 cs-gap-24">
-    <div class="cs-slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="1"
-      data-slides-per-view="1">
+    <div
+      class="cs-slider_container"
+      data-autoplay="0"
+      data-loop="1"
+      data-speed="600"
+      data-center="1"
+      data-slides-per-view="1"
+    >
       <div class="cs-slider_wrapper">
-        <div class="cs-slide">
-          <a href="#contact" class="cs-portfolio cs-style1 cs-bg">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg" data-src="/assets/img/portfolio_1.jpeg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">{t('portfolio.project1')}</h2>
-              <div class="cs-portfolio_subtitle">{t('portfolio.details')}</div>
+        {
+          portfolioProjects.map((project, index) => (
+            <div class="cs-slide">
+              <div class="cs-portfolio cs-style1 cs-bg">
+                <div class="cs-portfolio_hover" />
+                <div
+                  class="cs-portfolio_bg"
+                  data-src={project.image}
+                  onclick={`navigateToSlide(${index})`}
+                  style="cursor: pointer;"
+                />
+                <div class="cs-portfolio_info">
+                  <div class="cs-portfolio_info_bg cs-accent_bg" />
+                  <h2 class="cs-portfolio_title">{project.title}</h2>
+                  <a
+                    href={project.link ? project.link : undefined}
+                    class="cs-portfolio_subtitle d-flex align-items-center gap-2 text-decoration-underline"
+                  >
+                    {project.subtitle}
+                    <span
+                      class="badge bg-light text-dark rounded-2 d-inline-flex align-items-center justify-content-center"
+                      style="width: 20px; height: 20px; font-size: 10px;"
+                    >
+                      ↗
+                    </span>
+                  </a>
+                </div>
+              </div>
             </div>
-          </a>
-        </div>
-        <!-- .cs-slide -->
-        <div class="cs-slide">
-          <a href="#contact" class="cs-portfolio cs-style1 cs-bg">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg" data-src="/assets/img/portfolio_2.jpeg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">{t('portfolio.project2')}</h2>
-              <div class="cs-portfolio_subtitle">{t('portfolio.details')}</div>
-            </div>
-          </a>
-        </div>
-        <!-- .cs-slide -->
-        <div class="cs-slide">
-          <a href="#contact" class="cs-portfolio cs-style1 cs-bg">
-            <div class="cs-portfolio_hover"></div>
-            <div class="cs-portfolio_bg" data-src="/assets/img/portfolio_3.jpeg"></div>
-            <div class="cs-portfolio_info">
-              <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-              <h2 class="cs-portfolio_title">{t('portfolio.project3')}</h2>
-              <div class="cs-portfolio_subtitle">{t('portfolio.details')}</div>
-            </div>
-          </a>
-        </div>
-        <!-- .cs-slide -->
+          ))
+        }
       </div>
     </div>
     <!-- .cs-slider_container -->

@@ -1,0 +1,24 @@
+{
+  "es": {
+    "innovation.subtitle": "El Futuro es Ahora",
+    "innovation.title": "La innovación tecnológica no se detiene, ¿y tú?",
+    "innovation.description": "Vivimos en una era donde la inteligencia artificial revoluciona industrias enteras, donde la computación en la nube democratiza el acceso a tecnologías avanzadas, y donde la automatización transforma procesos que antes tomaban días en segundos. Cada día surgen nuevas herramientas, frameworks y soluciones que pueden catapultar tu negocio hacia el éxito. La pregunta no es si la tecnología avanzará, sino si tu empresa estará preparada para aprovechar estas oportunidades. En XSoftHub Consults, no vemos la tecnología como un obstáculo complejo, sino como el puente hacia un futuro más eficiente, rentable y competitivo. ¿Estás listo para dar el salto?",
+    "innovation.feature1.title": "Innovación Continua",
+    "innovation.feature1.description": "Implementamos las últimas tecnologías para mantener tu empresa a la vanguardia del mercado.",
+    "innovation.feature2.title": "Soluciones Escalables",
+    "innovation.feature2.description": "Desarrollamos sistemas que crecen contigo, adaptándose a las necesidades futuras de tu negocio.",
+    "innovation.feature3.title": "Transformación Digital",
+    "innovation.feature3.description": "Revolucionamos tus procesos empresariales con tecnología de última generación."
+  },
+  "en": {
+    "innovation.subtitle": "The Future is Now",
+    "innovation.title": "Technological innovation never stops, do you?",
+    "innovation.description": "We live in an era where artificial intelligence revolutionizes entire industries, where cloud computing democratizes access to advanced technologies, and where automation transforms processes that once took days into seconds. Every day new tools, frameworks, and solutions emerge that can catapult your business to success. The question is not whether technology will advance, but whether your company will be ready to seize these opportunities. At XSoftHub Consults, we don't see technology as a complex obstacle, but as the bridge to a more efficient, profitable, and competitive future. Are you ready to take the leap?",
+    "innovation.feature1.title": "Continuous Innovation",
+    "innovation.feature1.description": "We implement the latest technologies to keep your company at the forefront of the market.",
+    "innovation.feature2.title": "Scalable Solutions",
+    "innovation.feature2.description": "We develop systems that grow with you, adapting to your business future needs.",
+    "innovation.feature3.title": "Digital Transformation",
+    "innovation.feature3.description": "We revolutionize your business processes with cutting-edge technology."
+  }
+}

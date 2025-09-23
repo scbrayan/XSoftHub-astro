@@ -1,0 +1,28 @@
+{
+  "es": {
+    "title": "Diseño UI/UX",
+    "subtitle": "Creamos experiencias digitales que conectan con tus usuarios",
+    "description": "Nuestro equipo de diseñadores especializados en UI/UX transforma ideas complejas en interfaces intuitivas y atractivas. Combinamos investigación de usuarios, psicología del diseño y las últimas tendencias para crear productos digitales que no solo se ven increíbles, sino que también ofrecen experiencias excepcionales que convierten visitantes en clientes leales.",
+    "features": [
+      "Investigación y análisis de usuarios",
+      "Wireframes y prototipos interactivos",
+      "Diseño de interfaces modernas y responsivas",
+      "Testing de usabilidad y optimización",
+      "Sistemas de diseño escalables",
+      "Diseño centrado en la conversión"
+    ]
+  },
+  "en": {
+    "title": "UI/UX Design",
+    "subtitle": "We create digital experiences that connect with your users",
+    "description": "Our team of UI/UX design specialists transforms complex ideas into intuitive and attractive interfaces. We combine user research, design psychology and the latest trends to create digital products that not only look incredible, but also offer exceptional experiences that convert visitors into loyal customers.",
+    "features": [
+      "User research and analysis",
+      "Interactive wireframes and prototypes",
+      "Modern and responsive interface design",
+      "Usability testing and optimization",
+      "Scalable design systems",
+      "Conversion-focused design"
+    ]
+  }
+}

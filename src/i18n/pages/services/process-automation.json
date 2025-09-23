@@ -1,0 +1,34 @@
+{
+  "es": {
+    "services.process_automation.title": "Automatización de Procesos",
+    "services.process_automation.subtitle": "Optimiza tu negocio con automatización inteligente",
+    "services.process_automation.image": "automation.png",
+    "services.process_automation.description": "Transformamos tus procesos manuales en flujos de trabajo automatizados que aumentan la productividad y reducen errores. Implementamos soluciones RPA (Robotic Process Automation) y workflows inteligentes que se integran perfectamente con tus sistemas existentes. Nuestro enfoque identifica oportunidades de automatización en toda tu organización, desde tareas administrativas hasta procesos complejos de negocio, liberando a tu equipo para enfocarse en actividades de mayor valor.",
+    "services.process_automation.features": [
+      "RPA (Robotic Process Automation)",
+      "Workflows automatizados personalizados",
+      "Integración de sistemas y APIs",
+      "Automatización de documentos y formularios",
+      "Procesos de aprobación digitales",
+      "Notificaciones y alertas automáticas",
+      "Reportes y dashboards en tiempo real",
+      "Optimización continua de procesos"
+    ]
+  },
+  "en": {
+    "services.process_automation.title": "Process Automation",
+    "services.process_automation.subtitle": "Optimize your business with intelligent automation",
+    "services.process_automation.image": "automation.png",
+    "services.process_automation.description": "We transform your manual processes into automated workflows that increase productivity and reduce errors. We implement RPA (Robotic Process Automation) solutions and intelligent workflows that integrate seamlessly with your existing systems. Our approach identifies automation opportunities throughout your organization, from administrative tasks to complex business processes, freeing your team to focus on higher-value activities.",
+    "services.process_automation.features": [
+      "RPA (Robotic Process Automation)",
+      "Custom automated workflows",
+      "System and API integration",
+      "Document and form automation",
+      "Digital approval processes",
+      "Automatic notifications and alerts",
+      "Real-time reports and dashboards",
+      "Continuous process optimization"
+    ]
+  }
+}

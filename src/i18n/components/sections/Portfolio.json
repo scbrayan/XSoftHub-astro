@@ -1,0 +1,18 @@
+{
+  "es": {
+    "portfolio.subtitle": "Últimos Proyectos",
+    "portfolio.title": "Portafolio para explorar",
+    "portfolio.project1": "Aplicación Web Moderna",
+    "portfolio.project2": "Sistema de Gestión",
+    "portfolio.project3": "Plataforma E-commerce",
+    "portfolio.details": "Próximamente"
+  },
+  "en": {
+    "portfolio.subtitle": "Latest Projects",
+    "portfolio.title": "Portfolio to explore",
+    "portfolio.project1": "Modern Web Application",
+    "portfolio.project2": "Management System",
+    "portfolio.project3": "Mobile Application",
+    "portfolio.details": "Coming Soon"
+  }
+}

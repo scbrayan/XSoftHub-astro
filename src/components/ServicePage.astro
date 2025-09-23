@@ -4,9 +4,9 @@ import Contact from "./sections/Contact.astro";
 import type { ComponentProps } from "../types";
 
 interface Props extends ComponentProps {
-  title: string;
-  subtitle: string;
-  description: string;
+  title: string | string[];
+  subtitle: string | string[];
+  description: string | string[];
   features: string[];
   image: string;
   imageAlt: string;

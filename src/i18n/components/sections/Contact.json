@@ -1,0 +1,40 @@
+{
+  "es": {
+    "header.contact.title": "Contáctanos",
+    "header.contact.phone": "",
+    "header.contact.email": "info@xsofthub.com",
+    "header.contact.address": "San José, Costa Rica",
+    "contact.cta.title": "Hagamos algo <i>maravilloso</i> juntos",
+    "contact.cta.button": "Contáctanos",
+    "contact.page.hero.subtitle": "Estamos aquí para ayudarte a transformar tus ideas en realidad digital",
+    "contact.page.form.title": "Envíanos un mensaje",
+    "contact.page.form.subtitle": "¿Listo para comenzar tu proyecto?",
+    "contact.page.form.name": "Nombre completo",
+    "contact.page.form.email": "Email",
+    "contact.page.form.phone": "Teléfono",
+    "contact.page.form.project_type": "Tipo de proyecto",
+    "contact.page.form.budget": "Presupuesto estimado",
+    "contact.page.form.message": "Mensaje",
+    "contact.page.form.submit": "Enviar mensaje",
+    "404.contact.button": "Contáctanos"
+  },
+  "en": {
+    "header.contact.title": "Contact Us",
+    "header.contact.phone": "",
+    "header.contact.email": "info@xsofthub.com",
+    "header.contact.address": "San José, Costa Rica",
+    "contact.cta.title": "Let's make something <i>cool</i> together",
+    "contact.cta.button": "Contact Us",
+    "contact.page.hero.subtitle": "We are here to help you transform your ideas into digital reality",
+    "contact.page.form.title": "Send us a message",
+    "contact.page.form.subtitle": "Ready to start your project?",
+    "contact.page.form.name": "Full name",
+    "contact.page.form.email": "Email",
+    "contact.page.form.phone": "Phone",
+    "contact.page.form.project_type": "Project type",
+    "contact.page.form.budget": "Estimated budget",
+    "contact.page.form.message": "Message",
+    "contact.page.form.submit": "Send message",
+    "404.contact.button": "Contact Us"
+  }
+}

@@ -1,0 +1,22 @@
+---
+import ServicePage from "../../../components/ServicePage.astro";
+import { getStaticPaths, useTranslations } from "../../../i18n/utils";
+import type { SupportedLanguage } from "../../../types";
+import { ASSETS_IMG_SERVICES } from "../../../utils";
+
+export { getStaticPaths };
+
+const { lang } = Astro.params;
+const currentLang = lang as SupportedLanguage;
+const t = useTranslations(currentLang);
+---
+
+<ServicePage
+  lang={currentLang}
+  title={t("services.process_automation.title")}
+  subtitle={t("services.process_automation.subtitle")}
+  description={t("services.process_automation.description")}
+  features={t("services.process_automation.features") as string[]}
+  image={`${ASSETS_IMG_SERVICES}${t("services.process_automation.image")}`}
+  imageAlt="Process Automation Service"
+/>

@@ -1,0 +1,14 @@
+{
+  "es": {
+    "hero.title": "El éxito del mañana es innovar ahora !",
+    "hero.subtitle": "En XSoftHub Consults, transformamos tu visión en realidad digital a través de tecnología de vanguardia. Nuestro equipo de expertos desarrolladores y consultores tecnológicos se especializa en soluciones potenciadas por IA, infraestructura robusta y sistemas a medida que impulsan el crecimiento de tu negocio. Desde aplicaciones web inteligentes hasta plataformas empresariales e infraestructura tecnológica, diseñamos tecnología que marca una verdadera diferencia.",
+    "hero.cta": "Obtener Cotización",
+    "hero.social.title": "Síguenos"
+  },
+  "en": {
+    "hero.title": "Tomorrow's success is innovating now !",
+    "hero.subtitle": "At XSoftHub Consults, we transform your vision into digital reality through cutting-edge technology. Our team of expert developers and technology consultants specializes in AI-powered solutions, robust infrastructure, and custom-tailored systems that drive your business growth. From intelligent web applications to enterprise-grade platforms and technological infrastructure, we design technology that makes a real difference.",
+    "hero.cta": "Get a Quote",
+    "hero.social.title": "Follow Us"
+  }
+}

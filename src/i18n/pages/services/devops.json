@@ -1,0 +1,34 @@
+{
+  "es": {
+    "services.devops.title": "DevOps",
+    "services.devops.subtitle": "Acelera tu desarrollo con infraestructura moderna",
+    "services.devops.image": "devops.png",
+    "services.devops.description": "Implementamos prácticas DevOps que transforman tu ciclo de desarrollo, desde la integración continua hasta el despliegue automatizado. Nuestro enfoque combina herramientas de vanguardia con metodologías ágiles para crear pipelines robustos que reducen el tiempo de entrega y aumentan la calidad del software. Optimizamos tu infraestructura en la nube para máxima eficiencia y escalabilidad.",
+    "services.devops.features": [
+      "CI/CD pipelines automatizados",
+      "Infraestructura como código (IaC)",
+      "Containerización con Docker y Kubernetes",
+      "Monitoreo y observabilidad avanzada",
+      "Automatización de despliegues",
+      "Gestión de configuraciones",
+      "Seguridad integrada (DevSecOps)",
+      "Optimización de costos en la nube"
+    ]
+  },
+  "en": {
+    "services.devops.title": "DevOps",
+    "services.devops.subtitle": "Accelerate your development with modern infrastructure",
+    "services.devops.image": "devops.png",
+    "services.devops.description": "We implement DevOps practices that transform your development cycle, from continuous integration to automated deployment. Our approach combines cutting-edge tools with agile methodologies to create robust pipelines that reduce delivery time and increase software quality. We optimize your cloud infrastructure for maximum efficiency and scalability.",
+    "services.devops.features": [
+      "Automated CI/CD pipelines",
+      "Infrastructure as Code (IaC)",
+      "Containerization with Docker and Kubernetes",
+      "Advanced monitoring and observability",
+      "Deployment automation",
+      "Configuration management",
+      "Integrated security (DevSecOps)",
+      "Cloud cost optimization"
+    ]
+  }
+}

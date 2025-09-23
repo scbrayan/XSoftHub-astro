@@ -1,0 +1,30 @@
+{
+  "es": {
+    "title": "Desarrollo React.js",
+    "subtitle": "Aplicaciones web modernas y escalables con React",
+    "description": "Desarrollamos aplicaciones web de alto rendimiento utilizando React.js y su ecosistema completo. Nuestro equipo de desarrolladores expertos crea soluciones robustas, escalables y mantenibles que aprovechan al máximo las capacidades de React, incluyendo hooks, context API, y las mejores prácticas de desarrollo moderno para entregar productos que superan las expectativas.",
+    "features": [
+      "Aplicaciones SPA (Single Page Application)",
+      "Componentes reutilizables y modulares",
+      "Integración con APIs REST y GraphQL",
+      "State management con Redux/Zustand",
+      "Testing automatizado con Jest y React Testing Library",
+      "Optimización de rendimiento y SEO",
+      "Deployment y CI/CD automatizado"
+    ]
+  },
+  "en": {
+    "title": "React.js Development",
+    "subtitle": "Modern and scalable web applications with React",
+    "description": "We develop high-performance web applications using React.js and its complete ecosystem. Our team of expert developers creates robust, scalable and maintainable solutions that make the most of React capabilities, including hooks, context API, and modern development best practices to deliver products that exceed expectations.",
+    "features": [
+      "SPA (Single Page Application) development",
+      "Reusable and modular components",
+      "REST and GraphQL API integration",
+      "State management with Redux/Zustand",
+      "Automated testing with Jest and React Testing Library",
+      "Performance optimization and SEO",
+      "Automated deployment and CI/CD"
+    ]
+  }
+}

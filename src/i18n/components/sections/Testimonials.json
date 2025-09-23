@@ -1,0 +1,12 @@
+{
+  "es": {
+    "testimonials.text": "Ojalá se me hubiera ocurrido primero. La agencia creativa es el recurso empresarial tecnológico más valioso que hemos comprado. ¡Amigo, tu trabajo es increíble! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
+    "testimonials.client.name": "Ahon Monsery",
+    "testimonials.client.role": "CEO EN TECH"
+  },
+  "en": {
+    "testimonials.text": "I wish I would have thought of it first. Creative agency is the most tech valuable business resource we have ever purchased. Dude your stuff is the bomb! eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt to the explicabo.",
+    "testimonials.client.name": "Ahon Monsery",
+    "testimonials.client.role": "CEO AT TECH"
+  }
+}

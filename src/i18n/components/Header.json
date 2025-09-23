@@ -1,0 +1,16 @@
+{
+  "es": {
+    "header.project.question": "¿Tienes un proyecto en <br /> mente?",
+    "header.project.cta": "Hablemos",
+    "header.project.description": "Transformamos tus ideas en soluciones digitales innovadoras",
+    "header.menu.open": "Abrir menú",
+    "header.menu.close": "Cerrar menú"
+  },
+  "en": {
+    "header.project.question": "Do you have a project in your <br /> mind?",
+    "header.project.cta": "Let's Talk",
+    "header.project.description": "We transform your ideas into innovative digital solutions",
+    "header.menu.open": "Open menu",
+    "header.menu.close": "Close menu"
+  }
+}

@@ -1,12 +1,32 @@
 ---
 // Services section component
-import { useTranslations } from '../../i18n/utils';
-import type { ComponentProps } from '../../types';
+import { useTranslations } from "../../i18n/utils";
+import type { ComponentProps } from "../../types";
+import { ASSETS_IMG_SERVICES } from "../../utils";
 
 interface Props extends ComponentProps {}
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
+
+// Services data
+const services = [
+  {
+    title: t("services.devops.title") as string,
+    image: `${ASSETS_IMG_SERVICES}${t("services.devops.image") as string}`,
+    link: `/${lang}/services/devops`,
+  },
+  {
+    title: t("services.ai_agents.title") as string,
+    image: `${ASSETS_IMG_SERVICES}${t("services.ai_agents.image") as string}`,
+    link: `/${lang}/services/ai-agents`,
+  },
+  {
+    title: t("services.process_automation.title") as string,
+    image: `${ASSETS_IMG_SERVICES}${t("services.process_automation.image") as string}`,
+    link: `/${lang}/services/process-automation`,
+  },
+];
 ---
 
 <!-- Start Service Section -->
@@ -16,70 +36,48 @@ const t = useTranslations(lang);
     <div class="row">
       <div class="col-xl-4">
         <div class="cs-section_heading cs-style1">
-          <h3 class="cs-section_subtitle">{t('services.subtitle')}</h3>
-          <h2 class="cs-section_title">{t('services.title')}</h2>
+          <h3 class="cs-section_subtitle">{t("services.subtitle")}</h3>
+          <h2 class="cs-section_title">{t("services.title")}</h2>
           <div class="cs-height_45 cs-height_lg_20"></div>
         </div>
         <div class="cs-height_90 cs-height_lg_45"></div>
       </div>
       <div class="col-xl-8">
         <div class="row">
-          <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="cs-hobble">
-              <a href={`/${lang}/services/ui-ux-design`} class="cs-card cs-style1 cs-hover_layer1">
-                <img src="/assets/img/service_1.jpeg" alt="Service" />
-                <div class="cs-card_overlay"></div>
-                <div class="cs-card_info">
-                  <span class="cs-hover_layer3 cs-accent_bg"></span>
-                  <h2 class="cs-card_title">{t('services.uiux')}</h2>
+          {
+            services.map((project, index) => (
+              <>
+                <div class="col-lg-3 col-sm-6">
+                  <div
+                    class="cs-hobble wow fadeInUp"
+                    data-wow-duration="0.8s"
+                    data-wow-delay={`${(index % 4) * 0.1}s`}
+                  >
+                    <a
+                      href={project.link}
+                      class="cs-card cs-style1 cs-hover_layer1"
+                    >
+                      <img src={project.image} alt={project.title} />
+                      <div class="cs-card_overlay" />
+                      <div class="cs-card_info">
+                        <span class="cs-hover_layer3 cs-accent_bg" />
+                        <h2 class="cs-card_title">{project.title}</h2>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="cs-height_0 cs-height_lg_30" />
                 </div>
-              </a>
-            </div>
-            <div class="cs-height_0 cs-height_lg_30"></div>
-          </div>
-          <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="cs-hobble">
-              <a href={`/${lang}/services/react-development`} class="cs-card cs-style1 cs-hover_layer1">
-                <img src="/assets/img/service_2.jpeg" alt="Service" />
-                <div class="cs-card_overlay"></div>
-                <div class="cs-card_info">
-                  <span class="cs-hover_layer3 cs-accent_bg"></span>
-                  <h2 class="cs-card_title">{t('services.react')}</h2>
-                </div>
-              </a>
-            </div>
-            <div class="cs-height_0 cs-height_lg_30"></div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="cs-hobble">
-              <a href={`/${lang}/services/digital-marketing`} class="cs-card cs-style1 cs-hover_layer1">
-                <img src="/assets/img/service_3.jpeg" alt="Service" />
-                <div class="cs-card_overlay"></div>
-                <div class="cs-card_info">
-                  <span class="cs-hover_layer3 cs-accent_bg"></span>
-                  <h2 class="cs-card_title">{t('services.marketing')}</h2>
-                </div>
-              </a>
-            </div>
-            <div class="cs-height_0 cs-height_lg_30"></div>
-          </div>
-          <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="cs-hobble">
-              <a href={`/${lang}/services/technology`} class="cs-card cs-style1 cs-hover_layer1">
-                <img src="/assets/img/service_4.jpeg" alt="Service" />
-                <div class="cs-card_overlay"></div>
-                <div class="cs-card_info">
-                  <span class="cs-hover_layer3 cs-accent_bg"></span>
-                  <h2 class="cs-card_title">{t('services.technology')}</h2>
-                </div>
-              </a>
-            </div>
-            <div class="cs-height_0 cs-height_lg_30"></div>
-          </div>
-          <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
+                {/* Separación moderna cada 4 elementos (fila completa) */}
+                {(index + 1) % 4 === 0 && index < services.length - 1 && (
+                  <div class="col-12">
+                    <div class="cs-height_60 cs-height_lg_40" />
+                    <div style="height: 1px; background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.1) 20%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.1) 80%, transparent 100%); margin: 0 auto; width: 80%;" />
+                    <div class="cs-height_60 cs-height_lg_40" />
+                  </div>
+                )}
+              </>
+            ))
+          }
         </div>
       </div>
     </div>
