@@ -7,8 +7,8 @@ export default defineConfig({
   site: 'https://xsofthub.com',
 
   i18n: {
-    locales: ["es", "en"],
-    defaultLocale: "es",
+    locales: ["en", "es"],
+    defaultLocale: "en",
     routing: {
       prefixDefaultLocale: false
     }

@@ -13,13 +13,15 @@ import headerTranslations from './components/Header.json';
 import aiAgentsTranslations from './pages/services/ai-agents.json';
 import devopsTranslations from './pages/services/devops.json';
 import processAutomationTranslations from './pages/services/process-automation.json';
+import astroConfig from '../../astro.config.mjs';
 
 export const languages = {
   es: 'Español',
   en: 'English',
 };
 
-export const defaultLang = 'es';
+// Obtener el idioma por defecto desde la configuración de Astro
+export const defaultLang = astroConfig.i18n?.defaultLocale || 'en';
 
 export const ui = {
   es: {
