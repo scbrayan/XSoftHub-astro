@@ -1,0 +1,78 @@
+---
+import { useTranslations } from "../../i18n/utils";
+import type { ComponentProps } from "../../types";
+import type { LanguageKey } from "../../i18n/ui";
+import faqData from "../../i18n/components/Faq.json";
+
+interface Props extends ComponentProps {
+  lang: LanguageKey;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const { categories, faq_items } = faqData[lang];
+---
+
+<!-- Start FAQ Section -->
+<section id="faq">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="cs-faq_nav cs-radius_15">
+          <h2 class="cs-faq_nav_title cs-m0">{faqData[lang].title}</h2>
+          <div class="cs-height_30 cs-height_lg_30"></div>
+          <ul class="cs-list cs-style1 cs-mp0">
+            {
+              categories.map((category) => (
+                <li>
+                  <a class="cs-text_btn cs-type2">
+                    <svg
+                      width="22"
+                      height="22"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d={category.icon} fill="#FF4A17" />
+                    </svg>
+                    <span>{category.title}</span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7 offset-lg-1">
+        <div class="cs-height_0 cs-height_lg_40"></div>
+        <div class="cs-accordians cs-style1">
+          {
+            faq_items.map((item, index) => (
+              <div class={`cs-accordian ${index === 0 ? "active" : ""}`}>
+                <div class="cs-accordian_head">
+                  <h2 class="cs-accordian_title">{item.question}</h2>
+                  <span class="cs-accordian_toggle cs-accent_color">
+                    <svg
+                      width="15"
+                      height="8"
+                      viewBox="0 0 15 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0 0L7.5 7.5L15 0H0Z" fill="currentColor" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="cs-accordian_body">
+                  <p>{item.answer}</p>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-height_150 cs-height_lg_80"></div>
+</section>
+<!-- End FAQ Section -->

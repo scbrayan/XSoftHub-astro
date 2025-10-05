@@ -40,28 +40,28 @@ const teamMembers = [
       slack: undefined,
     },
   },
-  {
-    name: t("team.member3.name"),
-    role: t("team.member3.role"),
-    image: "/assets/img/member_noimage.png",
-    social: {
-      linkedin: undefined,
-      twitter: undefined,
-      youtube: undefined,
-      slack: undefined,
-    },
-  },
-  {
-    name: t("team.member4.name"),
-    role: t("team.member4.role"),
-    image: "/assets/img/member_noimage.png",
-    social: {
-      linkedin: undefined,
-      twitter: undefined,
-      youtube: undefined,
-      slack: undefined,
-    },
-  },
+  // {
+  //   name: t("team.member3.name"),
+  //   role: t("team.member3.role"),
+  //   image: "/assets/img/member_noimage.png",
+  //   social: {
+  //     linkedin: undefined,
+  //     twitter: undefined,
+  //     youtube: undefined,
+  //     slack: undefined,
+  //   },
+  // },
+  // {
+  //   name: t("team.member4.name"),
+  //   role: t("team.member4.role"),
+  //   image: "/assets/img/member_noimage.png",
+  //   social: {
+  //     linkedin: undefined,
+  //     twitter: undefined,
+  //     youtube: undefined,
+  //     slack: undefined,
+  //   },
+  // },
 ];
 ---
 
@@ -129,9 +129,13 @@ const teamMembers = [
               <div class="cs-slide">
                 <div class="cs-team cs-style1">
                   <div class="cs-member_thumb">
-                    <img 
-                      src={member.image} 
-                      alt={Array.isArray(member.name) ? member.name[0] : member.name}
+                    <img
+                      src={member.image}
+                      alt={
+                        Array.isArray(member.name)
+                          ? member.name[0]
+                          : member.name
+                      }
                       style="width: 280px; height: 320px; object-fit: cover; object-position: center;"
                     />
                     <div class="cs-member_overlay" />

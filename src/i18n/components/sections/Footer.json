@@ -2,10 +2,7 @@
   "es": {
     "contact.footer.welcome": "¡Bienvenido a XSoftHub Consults!",
     "contact.footer.services.title": "Servicios",
-    "contact.footer.services.ui": "Diseño UI/UX",
-    "contact.footer.services.wp": "Desarrollo WP",
-    "contact.footer.services.marketing": "Marketing digital",
-    "contact.footer.services.react": "Desarrollo React",
+    "contact.footer.saas.title": "Productos SaaS",
     "contact.footer.contact.title": "Contáctanos",
     "contact.footer.terms": "Términos de Uso",
     "contact.footer.privacy": "Política de Privacidad"
@@ -13,10 +10,7 @@
   "en": {
     "contact.footer.welcome": "Welcome to XSoftHub Consults!",
     "contact.footer.services.title": "Services",
-    "contact.footer.services.ui": "UI/UX design",
-    "contact.footer.services.wp": "WP development",
-    "contact.footer.services.marketing": "Digital marketing",
-    "contact.footer.services.react": "React development",
+    "contact.footer.saas.title": "SaaS Products",
     "contact.footer.contact.title": "Contact Us",
     "contact.footer.terms": "Terms of Use",
     "contact.footer.privacy": "Privacy Policy"

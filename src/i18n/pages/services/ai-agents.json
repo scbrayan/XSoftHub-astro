@@ -1,18 +1,18 @@
 {
   "es": {
-    "services.ai_agents.title": "Agentes de IA",
+    "services.ai_agents.title": "Agentes IA",
     "services.ai_agents.subtitle": "Inteligencia artificial para soporte y automatización",
     "services.ai_agents.image": "ai_agents.png",
-    "services.ai_agents.description": "Desarrollamos agentes de inteligencia artificial avanzados que revolucionan tu atención al cliente y automatizan procesos complejos. Nuestros chatbots y asistentes virtuales utilizan procesamiento de lenguaje natural y machine learning para brindar respuestas precisas 24/7. Implementamos soluciones de IA que aprenden continuamente y se adaptan a las necesidades específicas de tu negocio, mejorando la experiencia del usuario y optimizando la eficiencia operacional.",
+    "services.ai_agents.description": "Desarrollamos agentes de inteligencia artificial avanzados que revolucionan tu servicio al cliente y automatizan procesos complejos. Nuestros chatbots y asistentes virtuales utilizan procesamiento de lenguaje natural y aprendizaje automático para proporcionar respuestas precisas 24/7. Implementamos soluciones de IA que aprenden y se adaptan continuamente a las necesidades específicas de tu negocio, mejorando la experiencia del usuario y optimizando la eficiencia operativa.",
     "services.ai_agents.features": [
-      "Chatbots inteligentes con NLP avanzado",
-      "Asistentes virtuales personalizados",
-      "Automatización de atención al cliente",
-      "Integración con sistemas CRM y ERP",
-      "Análisis de sentimientos en tiempo real",
-      "Aprendizaje automático continuo",
-      "Soporte multicanal (web, móvil, redes sociales)",
-      "Reportes y analytics de conversaciones"
+      "Agentes inteligentes impulsados por IA generativa y RAG con conocimiento empresarial",
+      "Chatbots personalizados que aprenden de tus datos y procesos internos",
+      "Atención automatizada 24/7 en canales como WhatsApp, Telegram, web y correo electrónico",
+      "Integración fluida con CRM, ERP y sistemas internos para respuestas contextuales y precisas",
+      "Análisis de sentimientos y feedback en tiempo real para entender a tus clientes",
+      "Reportes de rendimiento y métricas de interacción con insights accionables",
+      "Aprendizaje continuo basado en conversaciones y resultados empresariales",
+      "Soporte multilingüe y adaptable a la identidad de tu marca"
     ]
   },
   "en": {
@@ -21,14 +21,14 @@
     "services.ai_agents.image": "ai_agents.png",
     "services.ai_agents.description": "We develop advanced artificial intelligence agents that revolutionize your customer service and automate complex processes. Our chatbots and virtual assistants use natural language processing and machine learning to provide accurate responses 24/7. We implement AI solutions that continuously learn and adapt to your business's specific needs, improving user experience and optimizing operational efficiency.",
     "services.ai_agents.features": [
-      "Intelligent chatbots with advanced NLP",
-      "Personalized virtual assistants",
-      "Customer service automation",
-      "CRM and ERP system integration",
-      "Real-time sentiment analysis",
-      "Continuous machine learning",
-      "Multi-channel support (web, mobile, social media)",
-      "Conversation reports and analytics"
+      "Intelligent agents powered by generative AI and RAG with business knowledge",
+      "Custom chatbots that learn from your data and internal processes",
+      "24/7 automated support across WhatsApp, Telegram, web, and email channels",
+      "Seamless integration with CRM, ERP, and internal systems for contextual and accurate responses",
+      "Real-time sentiment analysis and feedback to understand your customers",
+      "Performance reports and interaction metrics with actionable insights",
+      "Continuous learning based on conversations and business outcomes",
+      "Multilingual support adaptable to your brand identity"
     ]
   }
 }

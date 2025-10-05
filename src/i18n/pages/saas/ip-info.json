@@ -1,0 +1,186 @@
+{
+    "es": {
+        "saas.ip_info.title": "IP Info",
+        "saas.ip_info.subtitle": "Servicio de Geolocalización",
+        "saas.ip_info.description": "Nuestro servicio de IP Info proporciona información detallada y precisa sobre direcciones IP, incluyendo geolocalización, datos del ISP, zona horaria y más. Ideal para empresas que necesitan validar y analizar el tráfico de usuarios, prevenir fraudes o personalizar contenido basado en la ubicación.",
+        "saas.ip_info.image": "geolocation.png",
+        "saas.ip_info.features": [
+            "Geolocalización precisa a nivel de ciudad",
+            "Información detallada del ISP y ASN",
+            "Detección de VPN y proxies",
+            "Datos de zona horaria y región",
+            "API REST fácil de integrar",
+            "Caché inteligente para respuestas rápidas",
+            "Soporte para IPv4 e IPv6",
+            "Actualizaciones diarias de la base de datos"
+        ],
+        "saas.ip_info.pricing": {
+            "subtitle": "Planes y Precios",
+            "title": "Elige el plan perfecto para tu negocio",
+            "monthly": "Mensual",
+            "yearly": "Anual",
+            "plans": [
+                {
+                    "id": "basic",
+                    "title": "Básico",
+                    "prices": {
+                        "monthly": {
+                            "amount": "29",
+                            "description": "Por mes"
+                        },
+                        "yearly": {
+                            "amount": "290",
+                            "description": "Por año"
+                        }
+                    },
+                    "features": [
+                        "10,000 consultas mensuales",
+                        "Geolocalización básica",
+                        "Datos de ISP",
+                        "Soporte por email",
+                        "API REST"
+                    ],
+                    "button": "Comenzar Ahora"
+                },
+                {
+                    "id": "business",
+                    "title": "Business",
+                    "prices": {
+                        "monthly": {
+                            "amount": "99",
+                            "description": "Por mes"
+                        },
+                        "yearly": {
+                            "amount": "990",
+                            "description": "Por año"
+                        }
+                    },
+                    "features": [
+                        "100,000 consultas mensuales",
+                        "Geolocalización avanzada",
+                        "Detección de VPN/Proxy",
+                        "Datos de ASN",
+                        "Soporte prioritario",
+                        "Caché inteligente"
+                    ],
+                    "button": "Comenzar Ahora"
+                },
+                {
+                    "id": "enterprise",
+                    "title": "Enterprise",
+                    "prices": {
+                        "monthly": {
+                            "amount": "Personalizado",
+                            "description": "Contacta para más detalles"
+                        },
+                        "yearly": {
+                            "amount": "Personalizado",
+                            "description": "Contacta para más detalles"
+                        }
+                    },
+                    "features": [
+                        "Consultas ilimitadas",
+                        "Geolocalización premium",
+                        "Base de datos dedicada",
+                        "SLA garantizado",
+                        "Soporte 24/7",
+                        "API personalizada"
+                    ],
+                    "button": "Contactar"
+                }
+            ]
+        }
+    },
+    "en": {
+        "saas.ip_info.title": "IP Info",
+        "saas.ip_info.subtitle": "Geolocation Service",
+        "saas.ip_info.description": "Our IP Info service provides detailed and accurate information about IP addresses, including geolocation, ISP data, timezone, and more. Perfect for businesses that need to validate and analyze user traffic, prevent fraud, or customize content based on location.",
+        "saas.ip_info.image": "geolocation.png",
+        "saas.ip_info.features": [
+            "Accurate city-level geolocation",
+            "Detailed ISP and ASN information",
+            "VPN and proxy detection",
+            "Timezone and region data",
+            "Easy-to-integrate REST API",
+            "Smart caching for fast responses",
+            "Support for IPv4 and IPv6",
+            "Daily database updates"
+        ],
+        "saas.ip_info.pricing": {
+            "subtitle": "Plans & Pricing",
+            "title": "Choose the perfect plan for your business",
+            "monthly": "Monthly",
+            "yearly": "Yearly",
+            "plans": [
+                {
+                    "id": "basic",
+                    "title": "Basic",
+                    "prices": {
+                        "monthly": {
+                            "amount": "29",
+                            "description": "Per month"
+                        },
+                        "yearly": {
+                            "amount": "290",
+                            "description": "Per year"
+                        }
+                    },
+                    "features": [
+                        "10,000 monthly queries",
+                        "Basic geolocation",
+                        "ISP data",
+                        "Email support",
+                        "REST API"
+                    ],
+                    "button": "Start Now"
+                },
+                {
+                    "id": "business",
+                    "title": "Business",
+                    "prices": {
+                        "monthly": {
+                            "amount": "99",
+                            "description": "Per month"
+                        },
+                        "yearly": {
+                            "amount": "990",
+                            "description": "Per year"
+                        }
+                    },
+                    "features": [
+                        "100,000 monthly queries",
+                        "Advanced geolocation",
+                        "VPN/Proxy detection",
+                        "ASN data",
+                        "Priority support",
+                        "Smart caching"
+                    ],
+                    "button": "Start Now"
+                },
+                {
+                    "id": "enterprise",
+                    "title": "Enterprise",
+                    "prices": {
+                        "monthly": {
+                            "amount": "Custom",
+                            "description": "Contact for details"
+                        },
+                        "yearly": {
+                            "amount": "Custom",
+                            "description": "Contact for details"
+                        }
+                    },
+                    "features": [
+                        "Unlimited queries",
+                        "Premium geolocation",
+                        "Dedicated database",
+                        "Guaranteed SLA",
+                        "24/7 Support",
+                        "Custom API"
+                    ],
+                    "button": "Contact Us"
+                }
+            ]
+        }
+    }
+}

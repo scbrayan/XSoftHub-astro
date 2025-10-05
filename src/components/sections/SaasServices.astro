@@ -1,25 +1,27 @@
 ---
-// Services section component
+// SaaS Services section component
 import { useTranslations } from "../../i18n/utils";
 import type { ComponentProps } from "../../types";
-import { getServices } from "../../utils/data-store";
+import { getSaasServices } from "../../utils/data-store";
 
 interface Props extends ComponentProps {}
 
 const { lang } = Astro.props;
 const t = useTranslations(lang);
-const services = getServices(lang);
+const saasServices = getSaasServices(lang);
 ---
 
-<!-- Start Service Section -->
-<section id="service">
+<!-- Start SaaS Services Section -->
+<section id="saas_services">
   <div class="cs-height_150 cs-height_lg_80"></div>
   <div class="container">
     <div class="row">
       <div class="col-xl-4">
         <div class="cs-section_heading cs-style1">
-          <h3 class="cs-section_subtitle">{t("services.subtitle")}</h3>
-          <h2 class="cs-section_title">{t("services.title")}</h2>
+          <h3 class="cs-section_subtitle">
+            {t("saas_services.section.subtitle")}
+          </h3>
+          <h2 class="cs-section_title">{t("saas_services.section.title")}</h2>
           <div class="cs-height_45 cs-height_lg_20"></div>
         </div>
         <div class="cs-height_90 cs-height_lg_45"></div>
@@ -27,7 +29,7 @@ const services = getServices(lang);
       <div class="col-xl-8">
         <div class="row">
           {
-            services.map((project, index) => (
+            saasServices.map((project, index) => (
               <>
                 <div class="col-lg-3 col-sm-6">
                   <div
@@ -66,4 +68,4 @@ const services = getServices(lang);
   </div>
   <!-- <div class="cs-height_150 cs-height_lg_50"></div> -->
 </section>
-<!-- End Service Section -->
+<!-- End SaaS Services Section -->

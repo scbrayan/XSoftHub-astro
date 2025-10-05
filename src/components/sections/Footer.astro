@@ -1,6 +1,7 @@
 ---
 // Footer component
 import { useTranslations } from "../../i18n/utils";
+import { getServices, getSaasServices } from "../../utils/data-store";
 import type { ComponentProps } from "../../types";
 
 interface Props extends ComponentProps {}
@@ -8,6 +9,8 @@ interface Props extends ComponentProps {}
 const { lang } = Astro.props;
 const t = useTranslations(lang);
 const currentYear = new Date().getFullYear();
+const services = getServices(lang);
+const saasServices = getSaasServices(lang);
 ---
 
 <!-- Start Footer -->
@@ -33,26 +36,25 @@ const currentYear = new Date().getFullYear();
                             {t("contact.footer.services.title")}
                         </h2>
                         <ul class="cs-menu_widget cs-mp0">
-                            <li>
-                                <a href={`/${lang}/services/ui-ux-design`}
-                                    >{t("contact.footer.services.ui")}</a
-                                >
-                            </li>
-                            <li>
-                                <a href={`/${lang}/services/technology`}
-                                    >{t("contact.footer.services.wp")}</a
-                                >
-                            </li>
-                            <li>
-                                <a href={`/${lang}/services/digital-marketing`}
-                                    >{t("contact.footer.services.marketing")}</a
-                                >
-                            </li>
-                            <li>
-                                <a href={`/${lang}/services/react-development`}
-                                    >{t("contact.footer.services.react")}</a
-                                >
-                            </li>
+                            {services.map((service) => (
+                                <li>
+                                    <a href={service.link}>{service.title}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-footer_item">
+                        <h2 class="cs-widget_title">
+                            {t("contact.footer.saas.title")}
+                        </h2>
+                        <ul class="cs-menu_widget cs-mp0">
+                            {saasServices.map((service) => (
+                                <li>
+                                    <a href={service.link}>{service.title}</a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
@@ -62,14 +64,9 @@ const currentYear = new Date().getFullYear();
                             {t("contact.footer.contact.title")}
                         </h2>
                         <ul class="cs-menu_widget cs-mp0">
-                            <!-- <li>--</li> -->
-                            <!-- <li>+506 -------</li> -->
                             <li>info@xsofthub.com</li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <!-- Additional content can be added here -->
                 </div>
             </div>
         </div>
@@ -77,18 +74,6 @@ const currentYear = new Date().getFullYear();
     <div class="container">
         <div class="cs-bottom_footer" style="justify-content: center;">
             <div class="cs-copyright">Copyright © {currentYear}.</div>
-            <!-- 
-      <div class="cs-bottom_footer_right">
-        <ul class="cs-footer_links cs-mp0">
-          <li>
-            <a href="">{t('contact.footer.terms')}</a>
-          </li>
-          <li>
-            <a href="">{t('contact.footer.privacy')}</a>
-          </li>
-        </ul>
-      </div>
-      -->
         </div>
     </div>
 </footer>

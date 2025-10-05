@@ -1,0 +1,33 @@
+---
+import ServicePage from "../../../components/ServicePage.astro";
+import Pricing from "../../../components/sections/Pricing.astro";
+import { getStaticPaths, useTranslations } from "../../../i18n/utils";
+import type { SupportedLanguage } from "../../../types";
+import { ASSETS_IMG_SAAS } from "../../../utils";
+
+export { getStaticPaths };
+
+const { lang } = Astro.params;
+const currentLang = lang as SupportedLanguage;
+const t = useTranslations(currentLang);
+
+// Obtener las traducciones específicas
+const title = t("saas.ip_info.title" as any) as string;
+const subtitle = t("saas.ip_info.subtitle" as any) as string;
+const description = t("saas.ip_info.description" as any) as string;
+const features = t("saas.ip_info.features" as any) as string[];
+const imagePath = t("saas.ip_info.image" as any) as string;
+const pricing = t("saas.ip_info.pricing" as any) as any;
+---
+
+<ServicePage
+  lang={currentLang}
+  title={title}
+  subtitle={subtitle}
+  description={description}
+  features={features}
+  image={`${ASSETS_IMG_SAAS}${imagePath}`}
+  imageAlt="IP Info Service"
+>
+  <Pricing slot="pricing" pricing={pricing} lang={currentLang} />
+</ServicePage>

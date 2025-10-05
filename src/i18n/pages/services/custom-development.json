@@ -1,0 +1,34 @@
+{
+  "es": {
+    "services.custom_development.title": "Desarrollo a la Medida",
+    "services.custom_development.subtitle": "Soluciones personalizadas para tu negocio",
+    "services.custom_development.image": "custom_development.png",
+    "services.custom_development.description": "Desarrollamos soluciones de software totalmente personalizadas que se adaptan perfectamente a las necesidades específicas de tu negocio. Nuestro equipo full stack domina múltiples tecnologías y frameworks, permitiéndonos crear desde aplicaciones web y móviles hasta sistemas empresariales complejos. Implementamos las mejores prácticas de desarrollo para garantizar código limpio, mantenible y escalable.",
+    "services.custom_development.features": [
+      "Desarrollo web full stack (Frontend y Backend)",
+      "Aplicaciones móviles nativas e híbridas",
+      "Arquitectura de microservicios",
+      "Bases de datos SQL y NoSQL",
+      "APIs RESTful y GraphQL",
+      "Integración con servicios de terceros",
+      "Testing automatizado y CI/CD",
+      "Optimización de rendimiento y SEO"
+    ]
+  },
+  "en": {
+    "services.custom_development.title": "Custom Development",
+    "services.custom_development.subtitle": "Tailored solutions for your business",
+    "services.custom_development.image": "custom_development.png",
+    "services.custom_development.description": "We develop fully customized software solutions that perfectly adapt to your business's specific needs. Our full stack team masters multiple technologies and frameworks, allowing us to create everything from web and mobile applications to complex enterprise systems. We implement development best practices to ensure clean, maintainable, and scalable code.",
+    "services.custom_development.features": [
+      "Full stack web development (Frontend and Backend)",
+      "Native and hybrid mobile applications",
+      "Microservices architecture",
+      "SQL and NoSQL databases",
+      "RESTful and GraphQL APIs",
+      "Third-party service integration",
+      "Automated testing and CI/CD",
+      "Performance optimization and SEO"
+    ]
+  }
+}

@@ -14,10 +14,10 @@ export function getLangFromUrl(url: URL) {
  */
 export function getBrowserLanguage(request?: Request): SupportedLanguage {
   if (!request) return defaultLang as SupportedLanguage;
-  
+
   const acceptLanguage = request.headers.get('accept-language');
   if (!acceptLanguage) return defaultLang as SupportedLanguage;
-  
+
   // Parse the Accept-Language header
   const languages = acceptLanguage
     .split(',')
@@ -29,14 +29,14 @@ export function getBrowserLanguage(request?: Request): SupportedLanguage {
       };
     })
     .sort((a, b) => b.quality - a.quality); // Sort by preference
-  
+
   // Find the first supported language
   for (const lang of languages) {
     if (lang.code in ui) {
       return lang.code as SupportedLanguage;
     }
   }
-  
+
   return defaultLang as SupportedLanguage;
 }
 
@@ -51,7 +51,7 @@ export function resolveLanguage(params: any, request?: Request): SupportedLangua
   if (params?.lang && params.lang in ui) {
     return params.lang as SupportedLanguage;
   }
-  
+
   // 2. Fallback: browser language
   return getBrowserLanguage(request);
 }

@@ -1,0 +1,22 @@
+---
+import ServicePage from "../../../components/ServicePage.astro";
+import { getStaticPaths, useTranslations } from "../../../i18n/utils";
+import type { SupportedLanguage } from "../../../types";
+import { ASSETS_IMG_SERVICES } from "../../../utils";
+
+export { getStaticPaths };
+
+const { lang } = Astro.params;
+const currentLang = lang as SupportedLanguage;
+const t = useTranslations(currentLang);
+---
+
+<ServicePage
+  lang={currentLang}
+  title={t("services.custom_development.title")}
+  subtitle={t("services.custom_development.subtitle")}
+  description={t("services.custom_development.description")}
+  features={t("services.custom_development.features") as string[]}
+  image={`${ASSETS_IMG_SERVICES}${t("services.custom_development.image")}`}
+  imageAlt="Custom Development Service"
+/>

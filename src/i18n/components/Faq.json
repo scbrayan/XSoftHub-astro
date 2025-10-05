@@ -1,0 +1,138 @@
+{
+  "es": {
+    "title": "Preguntas Frecuentes",
+    "breadcrumb": {
+      "home": "Inicio",
+      "faq": "Preguntas Frecuentes"
+    },
+    "categories": [
+      {
+        "title": "Servicios",
+        "service_related": "Desarrollo y Tecnología",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      },
+      {
+        "title": "Inteligencia Artificial",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      },
+      {
+        "title": "DevOps y Automatización",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      },
+      {
+        "title": "Productos SaaS",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      }
+    ],
+    "faq_items": [
+      {
+        "question": "¿Qué tipos de agentes de IA pueden desarrollar para mi empresa?",
+        "answer": "Desarrollamos agentes de IA personalizados que incluyen chatbots inteligentes con procesamiento de lenguaje natural, asistentes virtuales que se integran con tus sistemas internos (CRM, ERP), y soluciones de automatización basadas en IA. Nuestros agentes pueden operar 24/7 en múltiples canales como WhatsApp, Telegram, web y correo electrónico."
+      },
+      {
+        "question": "¿Cómo funciona su servicio de IP Info y qué información proporciona?",
+        "answer": "Nuestro servicio IP Info ofrece geolocalización precisa a nivel de ciudad, información detallada del ISP, detección de VPN/proxies, y datos de zona horaria. La API es fácil de integrar y cuenta con caché inteligente para respuestas rápidas. Ofrecemos planes flexibles desde 10,000 hasta consultas ilimitadas mensuales."
+      },
+      {
+        "question": "¿Qué incluye su servicio de automatización de procesos?",
+        "answer": "Implementamos soluciones de automatización que incluyen RPA para tareas repetitivas, workflows personalizados, integración con sistemas internos y externos, automatización de documentos y formularios, y dashboards en tiempo real. Todo esto se adapta específicamente a las necesidades de tu negocio."
+      },
+      {
+        "question": "¿Cómo implementan las prácticas DevOps en los proyectos?",
+        "answer": "Implementamos CI/CD pipelines automatizados, containerización con Docker y Kubernetes, monitoreo avanzado con herramientas como Prometheus/Grafana, y gestión de configuraciones. Además, integramos escaneo de vulnerabilidades y centralización de logs para garantizar la calidad y seguridad."
+      },
+      {
+        "question": "¿Qué tecnologías utilizan para el desarrollo personalizado?",
+        "answer": "Trabajamos con un stack tecnológico completo que incluye desarrollo web full stack, aplicaciones móviles nativas e híbridas, arquitectura de microservicios, bases de datos SQL/NoSQL, y APIs RESTful/GraphQL. Seleccionamos las tecnologías más adecuadas según los requisitos específicos de cada proyecto."
+      },
+      {
+        "question": "¿Ofrecen soporte y mantenimiento después del desarrollo?",
+        "answer": "Sí, proporcionamos soporte continuo y mantenimiento para todos nuestros desarrollos. Esto incluye monitoreo proactivo, actualizaciones de seguridad, optimización de rendimiento y soporte técnico. Para servicios SaaS como IP Info, ofrecemos diferentes niveles de soporte según el plan contratado."
+      },
+      {
+        "question": "¿Cómo garantizan la seguridad en sus desarrollos y servicios?",
+        "answer": "Implementamos múltiples capas de seguridad que incluyen escaneo automático de vulnerabilidades, pruebas de penetración, cifrado de datos, autenticación robusta y monitoreo continuo. Para servicios SaaS, utilizamos infraestructura cloud segura y cumplimos con estándares de protección de datos."
+      },
+      {
+        "question": "¿Pueden integrar sus soluciones con sistemas existentes?",
+        "answer": "Sí, nos especializamos en integraciones fluidas con sistemas existentes como CRM, ERP, y otras herramientas empresariales. Utilizamos APIs y middlewares seguros para garantizar una comunicación eficiente entre sistemas, manteniendo la integridad y seguridad de los datos."
+      },
+      {
+        "question": "¿Qué metodología de desarrollo utilizan?",
+        "answer": "Utilizamos metodologías ágiles adaptadas a cada proyecto, con sprints regulares, comunicación continua y entregas incrementales. Esto nos permite mantener la transparencia, adaptarnos a cambios rápidamente y asegurar la calidad del producto final."
+      },
+      {
+        "question": "¿Cómo manejan la escalabilidad en sus soluciones?",
+        "answer": "Diseñamos todas nuestras soluciones pensando en la escalabilidad desde el inicio. Utilizamos arquitecturas cloud-native, microservicios, y prácticas DevOps que permiten escalar horizontal y verticalmente según las necesidades. Para servicios SaaS como IP Info, implementamos caché inteligente y balanceo de carga."
+      }
+    ]
+  },
+  "en": {
+    "title": "Frequently Asked Questions",
+    "breadcrumb": {
+      "home": "Home",
+      "faq": "FAQ"
+    },
+    "categories": [
+      {
+        "title": "Services",
+        "service_related": "Development and Technology",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      },
+      {
+        "title": "Artificial Intelligence",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      },
+      {
+        "title": "DevOps and Automation",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      },
+      {
+        "title": "SaaS Products",
+        "icon": "M2 4H0V20C0 21.1 0.9 22 2 22H18V20H2V4ZM20 0H6C4.9 0 4 0.9 4 2V16C4 17.1 4.9 18 6 18H20C21.1 18 22 17.1 22 16V2C22 0.9 21.1 0 20 0ZM20 16H6V2H20V16Z"
+      }
+    ],
+    "faq_items": [
+      {
+        "question": "What types of AI agents can you develop for my company?",
+        "answer": "We develop custom AI agents including intelligent chatbots with natural language processing, virtual assistants that integrate with your internal systems (CRM, ERP), and AI-based automation solutions. Our agents can operate 24/7 across multiple channels like WhatsApp, Telegram, web, and email."
+      },
+      {
+        "question": "How does your IP Info service work and what information does it provide?",
+        "answer": "Our IP Info service offers accurate city-level geolocation, detailed ISP information, VPN/proxy detection, and timezone data. The API is easy to integrate and features smart caching for fast responses. We offer flexible plans from 10,000 to unlimited monthly queries."
+      },
+      {
+        "question": "What does your process automation service include?",
+        "answer": "We implement automation solutions that include RPA for repetitive tasks, custom workflows, integration with internal and external systems, document and form automation, and real-time dashboards. All of this is specifically adapted to your business needs."
+      },
+      {
+        "question": "How do you implement DevOps practices in projects?",
+        "answer": "We implement automated CI/CD pipelines, containerization with Docker and Kubernetes, advanced monitoring with tools like Prometheus/Grafana, and configuration management. We also integrate vulnerability scanning and log centralization to ensure quality and security."
+      },
+      {
+        "question": "What technologies do you use for custom development?",
+        "answer": "We work with a complete technology stack including full stack web development, native and hybrid mobile applications, microservices architecture, SQL/NoSQL databases, and RESTful/GraphQL APIs. We select the most appropriate technologies based on each project's specific requirements."
+      },
+      {
+        "question": "Do you offer support and maintenance after development?",
+        "answer": "Yes, we provide ongoing support and maintenance for all our developments. This includes proactive monitoring, security updates, performance optimization, and technical support. For SaaS services like IP Info, we offer different support levels based on the contracted plan."
+      },
+      {
+        "question": "How do you ensure security in your developments and services?",
+        "answer": "We implement multiple security layers including automated vulnerability scanning, penetration testing, data encryption, robust authentication, and continuous monitoring. For SaaS services, we use secure cloud infrastructure and comply with data protection standards."
+      },
+      {
+        "question": "Can you integrate your solutions with existing systems?",
+        "answer": "Yes, we specialize in seamless integrations with existing systems such as CRM, ERP, and other business tools. We use secure APIs and middlewares to ensure efficient communication between systems, maintaining data integrity and security."
+      },
+      {
+        "question": "What development methodology do you use?",
+        "answer": "We use agile methodologies adapted to each project, with regular sprints, continuous communication, and incremental deliveries. This allows us to maintain transparency, adapt to changes quickly, and ensure final product quality."
+      },
+      {
+        "question": "How do you handle scalability in your solutions?",
+        "answer": "We design all our solutions with scalability in mind from the start. We use cloud-native architectures, microservices, and DevOps practices that allow horizontal and vertical scaling as needed. For SaaS services like IP Info, we implement smart caching and load balancing."
+      }
+    ]
+  }
+}

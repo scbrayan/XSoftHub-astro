@@ -1,21 +1,13 @@
 ---
 import { useTranslations } from "../../i18n/utils";
 import type { ComponentProps } from "../../types";
+import { Arrow, Feature } from "../icons/ui";
 
 interface Props extends ComponentProps {}
-const { lang } = Astro.props;
+const { lang, pricing } = Astro.props as Props & { pricing: any };
 const t = useTranslations(lang);
 
-const FeatureIcon = `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18C5.59 18 2 14.41 2 10ZM0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10ZM10 9H6L6 11H10V14L14 10L10 6L10 9Z" fill="currentColor"/>
-</svg>`;
-
-const ArrowIcon = `<svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"/>
-</svg>`;
-
-const periods = ['monthly', 'yearly'] as const;
-const plans = t('pricing.plans');
+// Obtener las traducciones específicas de precios
 ---
 
 <section>
@@ -23,73 +15,100 @@ const plans = t('pricing.plans');
         <div class="cs-tabs cs-style1">
             <div class="cs-tabs_heading">
                 <div class="cs-section_heading cs-style1">
-                    <h3 class="cs-section_subtitle">{t("pricing.subtitle")}</h3>
+                    <h3 class="cs-section_subtitle">{pricing.subtitle}</h3>
                     <h2 class="cs-section_title">
-                        {t("pricing.title")}
+                        {pricing.title}
                     </h2>
                 </div>
                 <ul class="cs-tab_links cs-style1 cs-mp0 cs-primary_font">
-                    <li><a href="#tab_1">{t("pricing.monthly")}</a></li>
+                    <li><a href="#tab_1">{pricing.monthly}</a></li>
                     <li class="active">
-                        <a href="#tab_2">{t("pricing.yearly")}</a>
+                        <a href="#tab_2">{pricing.yearly}</a>
                     </li>
                 </ul>
             </div><!-- .cs-tabs_heading -->
             <div class="cs-height_85 cs-height_lg_40"></div>
             <div class="cs-tab_body">
-                {periods.map((period, periodIndex) => (
-                    <div class={`cs-tab ${periodIndex === 1 ? 'active' : ''}`} id={`tab_${periodIndex + 1}`}>
-                        <div class="row">
-                            {plans.map((plan) => (
-                                <div class="col-lg-4">
-                                    <div class="cs-pricing_table cs-style1">
-                                        <h2 class="cs-pricing_title">
-                                            {plan.title}
-                                        </h2>
-                                        <div class="cs-pricing_info">
-                                            <div class="cs-price">
-                                                {plan.id === 'enterprise' ? (
-                                                    <div class="cs-price_text">
-                                                        {plan.prices[period].amount}
-                                                    </div>
-                                                ) : (
-                                                    <div class="cs-price_wrap">
-                                                        <h3 class="cs-white_color">
-                                                            ${plan.prices[period].amount}/
-                                                        </h3>
-                                                        <span class="cs-accent_color">
-                                                            {t(`pricing.${period}`)}
-                                                        </span>
-                                                    </div>
+                {
+                    ["monthly", "yearly"].map((period, periodIndex) => (
+                        <div
+                            class={`cs-tab ${periodIndex === 1 ? "active" : ""}`}
+                            id={`tab_${periodIndex + 1}`}
+                        >
+                            <div class="row">
+                                {pricing.plans.map((plan: any) => (
+                                    <div class="col-lg-4">
+                                        <div class="cs-pricing_table cs-style1">
+                                            <h2 class="cs-pricing_title">
+                                                {plan.title}
+                                            </h2>
+                                            <div class="cs-pricing_info">
+                                                <div class="cs-price">
+                                                    {plan.id ===
+                                                    "enterprise" ? (
+                                                        <div class="cs-price_text">
+                                                            {
+                                                                plan.prices[
+                                                                    period
+                                                                ].amount
+                                                            }
+                                                        </div>
+                                                    ) : (
+                                                        <div class="cs-price_wrap">
+                                                            <h3 class="cs-white_color">
+                                                                $
+                                                                {
+                                                                    plan.prices[
+                                                                        period
+                                                                    ].amount
+                                                                }
+                                                                /
+                                                            </h3>
+                                                            <span class="cs-accent_color">
+                                                                {
+                                                                    pricing[
+                                                                        period
+                                                                    ]
+                                                                }
+                                                            </span>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                                <div class="cs-price_text">
+                                                    {
+                                                        plan.prices[period]
+                                                            .description
+                                                    }
+                                                </div>
+                                            </div>
+                                            <ul class="cs-pricing_feature cs-mp0">
+                                                {plan.features.map(
+                                                    (feature: string) => (
+                                                        <li>
+                                                            <span class="cs-feature_icon cs-accent_color">
+                                                                <Feature />
+                                                            </span>
+                                                            <span>
+                                                                {feature}
+                                                            </span>
+                                                        </li>
+                                                    ),
                                                 )}
-                                            </div>
-                                            <div class="cs-price_text">
-                                                {plan.prices[period].description}
+                                            </ul>
+                                            <div class="cs-pricing_btn_wrap">
+                                                <a href="#" class="cs-text_btn">
+                                                    <span>{plan.button}</span>
+                                                    <Arrow />
+                                                </a>
                                             </div>
                                         </div>
-                                        <ul class="cs-pricing_feature cs-mp0">
-                                            {plan.features.map((feature: string) => (
-                                                <li>
-                                                    <span class="cs-feature_icon cs-accent_color">
-                                                        <Fragment set:html={FeatureIcon} />
-                                                    </span>
-                                                    <span>{feature}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        <div class="cs-pricing_btn_wrap">
-                                            <a href="#" class="cs-text_btn">
-                                                <span>{plan.button}</span>
-                                                <Fragment set:html={ArrowIcon} />
-                                            </a>
-                                        </div>
+                                        <div class="cs-height_25 cs-height_lg_25" />
                                     </div>
-                                    <div class="cs-height_25 cs-height_lg_25"></div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))
+                }
             </div>
         </div>
     </div>
@@ -167,4 +186,5 @@ const plans = t('pricing.plans');
             display: flex;
             flex-direction: column;
         }
-    }</style>
+    }
+</style>

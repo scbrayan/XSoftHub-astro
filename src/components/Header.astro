@@ -1,15 +1,16 @@
 ---
-// Header component with main navigation and side menu
 import { useTranslations } from "../i18n/utils";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
 import { Arrow } from "../components/icons/ui";
 import { Phone, Email, Location } from "../components/icons/contact";
 import type { OptionalLanguageProps } from "../types";
+import { getServices } from "../utils/data-store";
 
 interface Props extends OptionalLanguageProps {}
 
 const { lang = "es" } = Astro.props;
 const t = useTranslations(lang);
+const services = getServices(lang);
 ---
 
 <!-- Start Header Section -->
@@ -26,7 +27,131 @@ const t = useTranslations(lang);
           </a>
         </div>
         <div class="cs-main_header_center">
-          <!-- Navigation menu can be added here -->
+          <div class="cs-nav cs-primary_font cs-medium">
+            <ul class="cs-nav_list">
+              <!-- <li class="menu-item-has-children cs-mega_menu">
+                <a href={`/${lang}`}>Home</a>
+                <ul class="cs-mega_wrapper">
+                  <li>
+                    <ul>
+                      <li>
+                        <a href={`/${lang}`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/main-home.jpeg" alt="Main Home" />
+                        </a>
+                        <a href={`/${lang}`}>Main Home</a>
+                      </li>
+                      <li>
+                        <a href={`/${lang}/showcase-portfolio`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/showcase.jpeg" alt="Showcase Portfolio" />
+                        </a>
+                        <a href={`/${lang}/showcase-portfolio`}>Showcase Portfolio</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href={`/${lang}/photography-agency`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/photography-agency.jpeg" alt="Photography Agency" />
+                        </a>
+                        <a href={`/${lang}/photography-agency`}>Photography Agency</a>
+                      </li>
+                      <li>
+                        <a href={`/${lang}/case-study-showcase`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/case_study_showcase.jpeg" alt="Case Study Showcase" />
+                        </a>
+                        <a href={`/${lang}/case-study-showcase`}>Case Study Showcase</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href={`/${lang}/creative-portfolio`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/portfolio.jpeg" alt="Creative Portfolio" />
+                        </a>
+                        <a href={`/${lang}/creative-portfolio`}>Creative Portfolio</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href={`/${lang}/digital-agency`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/digital-agency.jpeg" alt="Digital Agency" />
+                        </a>
+                        <a href={`/${lang}/digital-agency`}>Digital Agency</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href={`/${lang}/marketing-agency`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/marketing.jpeg" alt="Marketing Agency" />
+                        </a>
+                        <a href={`/${lang}/marketing-agency`}>Marketing Agency</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li>
+                        <a href={`/${lang}/freelancer-agency`} class="cs-nav_list_img">
+                          <img src="/assets/img/demo/freelancer-agency.jpeg" alt="Freelancer Agency" />
+                          <span class="cs-header_badge">New</span>
+                        </a>
+                        <a href={`/${lang}/freelancer-agency`}>Freelancing Agency</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li><a href={`/${lang}/about`}>About</a></li> -->
+              <li class="menu-item-has-children">
+                <a>Services</a>
+                <ul>
+                  {
+                    services.map((service) => (
+                      <li>
+                        <a href={service.link}>{service.title}</a>
+                      </li>
+                    ))
+                  }
+                </ul>
+              </li>
+              <!-- <li class="menu-item-has-children">
+                <a href={`/${lang}/portfolio`}>Portfolio</a>
+                <ul>
+                  <li><a href={`/${lang}/portfolio`}>Portfolio</a></li>
+                  <li>
+                    <a href={`/${lang}/portfolio/details`}>Portfolio Details</a>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li class="menu-item-has-children">
+                <a href={`/${lang}/blog`}>Blog</a>
+                <ul>
+                  <li><a href={`/${lang}/blog`}>Blog</a></li>
+                  <li><a href={`/${lang}/blog/details`}>Blog Details</a></li>
+                </ul>
+              </li> -->
+              <li class="menu-item-has-children">
+                <a>Pages</a>
+                <ul>
+                  <li><a href={`/${lang}/contact`}>Contact</a></li>
+                  <!-- <li><a href={`/${lang}/team`}>Team</a></li> -->
+                  <!-- <li><a href={`/${lang}/team/details`}>Team Details</a></li> -->
+                  <!-- <li>
+                    <a href={`/${lang}/case-study/details`}
+                      >Case Study Details</a
+                    >
+                  </li> -->
+                  <li><a href={`/${lang}#faq`}>FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
           <LanguageSwitcher lang={lang} />
         </div>
         <div class="cs-main_header_right">

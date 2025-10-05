@@ -1,0 +1,16 @@
+{
+  "es": {
+    "saas_services.section.title": "Servicios SaaS",
+    "saas_services.section.subtitle": "Soluciones en la Nube",
+    "saas_services.ip_info.title": "IP Info",
+    "saas_services.ip_info.description": "Servicio de geolocalización e información detallada de direcciones IP",
+    "saas_services.ip_info.image": "geolocation.png"
+  },
+  "en": {
+    "saas_services.section.title": "SaaS Services",
+    "saas_services.section.subtitle": "Cloud Solutions",
+    "saas_services.ip_info.title": "IP Info",
+    "saas_services.ip_info.description": "Geolocation service and detailed IP address information",
+    "saas_services.ip_info.image": "geolocation.png"
+  }
+}

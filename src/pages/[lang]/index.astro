@@ -4,6 +4,7 @@ import Hero from "../../components/sections/Hero.astro";
 import FunFact from "../../components/sections/FunFact.astro";
 import Innovation from "../../components/sections/Innovation.astro";
 import Services from "../../components/sections/Services.astro";
+import SaasServices from "../../components/sections/SaasServices.astro";
 import Portfolio from "../../components/sections/Portfolio.astro";
 import VideoSection from "../../components/sections/VideoSection.astro";
 import Team from "../../components/sections/Team.astro";
@@ -14,6 +15,7 @@ import Contact from "../../components/sections/Contact.astro";
 import Pricing from "../../components/sections/Pricing.astro";
 import { getStaticPaths, useTranslations } from "../../i18n/utils";
 import type { SupportedLanguage, ComponentProps } from "../../types";
+import Faq from "../../components/sections/Faq.astro";
 
 export { getStaticPaths };
 
@@ -32,15 +34,16 @@ const t = useTranslations(currentLang);
   <FunFact lang={currentLang} />
   <Innovation lang={currentLang} />
   <Services lang={currentLang} />
+  <SaasServices lang={currentLang} />
   <!-- <Portfolio lang={currentLang} /> -->
   <!-- <VideoSection lang={currentLang} /> -->
   <Team lang={currentLang} />
-  <Pricing lang={currentLang} />
   <!-- <Testimonials lang={currentLang} /> -->
 
   <!-- <Blog lang={currentLang} /> -->
 
   <Partners lang={currentLang} />
+  <Faq lang={currentLang} />
 
   <Contact lang={currentLang} />
 
