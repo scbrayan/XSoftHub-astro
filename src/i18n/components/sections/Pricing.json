@@ -1,0 +1,164 @@
+{
+  "es": {
+    "pricing.subtitle": "Precios y Paquetes",
+    "pricing.title": "Proporcionando los mejores precios para el cliente",
+    "pricing.monthly": "Mensual",
+    "pricing.yearly": "Anual",
+    "pricing.plans": [
+      {
+        "id": "standard",
+        "title": "Estándar",
+        "prices": {
+          "monthly": {
+            "amount": "59",
+            "description": "Por suscriptor por mes"
+          },
+          "yearly": {
+            "amount": "590",
+            "description": "Por suscriptor por año"
+          }
+        },
+        "features": [
+          "Sitio web estático responsive",
+          "Marketing con video",
+          "Investigación de palabras clave",
+          "Campaña de Facebook"
+        ],
+        "button": "Comprar Ahora"
+      },
+      {
+        "id": "professional",
+        "title": "Profesional",
+        "prices": {
+          "monthly": {
+            "amount": "299",
+            "description": "Por suscriptor por mes"
+          },
+          "yearly": {
+            "amount": "2990",
+            "description": "Por suscriptor por año"
+          }
+        },
+        "features": [
+          "Sitio web estático responsive",
+          "Creación de contenido",
+          "Palabras clave de alta calidad",
+          "Campaña de Facebook",
+          "Solución de comercio electrónico",
+          "Google Adwords",
+          "Soporte prioritario",
+          "Análisis de competencia"
+        ],
+        "button": "Comprar Ahora"
+      },
+      {
+        "id": "enterprise",
+        "title": "Enterprise",
+        "prices": {
+          "monthly": {
+            "amount": "Personalizado",
+            "description": "Precio personalizado según tus necesidades"
+          },
+          "yearly": {
+            "amount": "Personalizado",
+            "description": "Precio personalizado según tus necesidades"
+          }
+        },
+        "features": [
+          "Soluciones personalizadas a medida",
+          "Soporte prioritario 24/7",
+          "Integración con sistemas existentes",
+          "Consultoría estratégica",
+          "Escalabilidad empresarial",
+          "Características premium personalizadas",
+          "Equipo dedicado",
+          "Implementación personalizada",
+          "Capacitación del equipo",
+          "Monitoreo avanzado"
+        ],
+        "button": "Contactar"
+      }
+    ]
+  },
+  "en": {
+    "pricing.subtitle": "Pricing & Packaging",
+    "pricing.title": "Providing best pricing for client",
+    "pricing.monthly": "Monthly",
+    "pricing.yearly": "Yearly",
+    "pricing.plans": [
+      {
+        "id": "standard",
+        "title": "Standard",
+        "prices": {
+          "monthly": {
+            "amount": "59",
+            "description": "Per subscriber per month"
+          },
+          "yearly": {
+            "amount": "590",
+            "description": "Per subscriber per year"
+          }
+        },
+        "features": [
+          "Static responsive website",
+          "Video marketing",
+          "Keywords research",
+          "Facebook campaign"
+        ],
+        "button": "Purchase Now"
+      },
+      {
+        "id": "professional",
+        "title": "Professional",
+        "prices": {
+          "monthly": {
+            "amount": "299",
+            "description": "Per subscriber per month"
+          },
+          "yearly": {
+            "amount": "2990",
+            "description": "Per subscriber per year"
+          }
+        },
+        "features": [
+          "Static responsive website",
+          "Content creating",
+          "High quality keywords",
+          "Facebook campaign",
+          "eCommerce solution",
+          "Google adword",
+          "Priority support",
+          "Competitor analysis"
+        ],
+        "button": "Purchase Now"
+      },
+      {
+        "id": "enterprise",
+        "title": "Enterprise",
+        "prices": {
+          "monthly": {
+            "amount": "Custom",
+            "description": "Customized pricing based on your needs"
+          },
+          "yearly": {
+            "amount": "Custom",
+            "description": "Customized pricing based on your needs"
+          }
+        },
+        "features": [
+          "Tailored custom solutions",
+          "24/7 Priority support",
+          "Existing systems integration",
+          "Strategic consulting",
+          "Enterprise scalability",
+          "Custom premium features",
+          "Dedicated team",
+          "Custom implementation",
+          "Team training",
+          "Advanced monitoring"
+        ],
+        "button": "Contact Us"
+      }
+    ]
+  }
+}

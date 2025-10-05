@@ -11,6 +11,7 @@ import Testimonials from "../../components/sections/Testimonials.astro";
 import Blog from "../../components/sections/Blog.astro";
 import Partners from "../../components/sections/Partners.astro";
 import Contact from "../../components/sections/Contact.astro";
+import Pricing from "../../components/sections/Pricing.astro";
 import { getStaticPaths, useTranslations } from "../../i18n/utils";
 import type { SupportedLanguage, ComponentProps } from "../../types";
 
@@ -34,6 +35,7 @@ const t = useTranslations(currentLang);
   <!-- <Portfolio lang={currentLang} /> -->
   <!-- <VideoSection lang={currentLang} /> -->
   <Team lang={currentLang} />
+  <Pricing lang={currentLang} />
   <!-- <Testimonials lang={currentLang} /> -->
 
   <!-- <Blog lang={currentLang} /> -->

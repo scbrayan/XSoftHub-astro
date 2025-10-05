@@ -9,6 +9,7 @@ import servicesTranslations from './components/sections/Services.json';
 import contactTranslations from './components/sections/Contact.json';
 import partnersTranslations from './components/sections/Partners.json';
 import testimonialsTranslations from './components/sections/Testimonials.json';
+import pricingTranslations from './components/sections/Pricing.json';
 import headerTranslations from './components/Header.json';
 import aiAgentsTranslations from './pages/services/ai-agents.json';
 import devopsTranslations from './pages/services/devops.json';
@@ -36,6 +37,7 @@ export const ui = {
     ...contactTranslations.es,
     ...partnersTranslations.es,
     ...testimonialsTranslations.es,
+    ...pricingTranslations.es,
     ...headerTranslations.es,
     ...aiAgentsTranslations.es,
     ...devopsTranslations.es,
@@ -88,6 +90,7 @@ export const ui = {
     ...contactTranslations.en,
     ...partnersTranslations.en,
     ...testimonialsTranslations.en,
+    ...pricingTranslations.en,
     ...headerTranslations.en,
     ...aiAgentsTranslations.en,
     ...devopsTranslations.en,
