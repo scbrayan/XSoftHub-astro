@@ -4,13 +4,14 @@ import LanguageSwitcher from "./LanguageSwitcher.astro";
 import { Arrow } from "../components/icons/ui";
 import { Phone, Email, Location } from "../components/icons/contact";
 import type { OptionalLanguageProps } from "../types";
-import { getServices } from "../utils/data-store";
+import { getServices, getSaasServices } from "../utils/data-store";
 
 interface Props extends OptionalLanguageProps {}
 
 const { lang = "es" } = Astro.props;
 const t = useTranslations(lang);
 const services = getServices(lang);
+const saasServices = getSaasServices(lang);
 ---
 
 <!-- Start Header Section -->
@@ -109,7 +110,7 @@ const services = getServices(lang);
               </li> -->
               <!-- <li><a href={`/${lang}/about`}>About</a></li> -->
               <li class="menu-item-has-children">
-                <a>Services</a>
+                <a>{t("nav.services")}</a>
                 <ul>
                   {
                     services.map((service) => (
@@ -120,22 +121,18 @@ const services = getServices(lang);
                   }
                 </ul>
               </li>
-              <!-- <li class="menu-item-has-children">
-                <a href={`/${lang}/portfolio`}>Portfolio</a>
+              <li class="menu-item-has-children">
+                <a>{t("saas_services.section.title")}</a>
                 <ul>
-                  <li><a href={`/${lang}/portfolio`}>Portfolio</a></li>
-                  <li>
-                    <a href={`/${lang}/portfolio/details`}>Portfolio Details</a>
-                  </li>
+                  {
+                    saasServices.map((service) => (
+                      <li>
+                        <a href={service.link}>{service.title}</a>
+                      </li>
+                    ))
+                  }
                 </ul>
-              </li> -->
-              <!-- <li class="menu-item-has-children">
-                <a href={`/${lang}/blog`}>Blog</a>
-                <ul>
-                  <li><a href={`/${lang}/blog`}>Blog</a></li>
-                  <li><a href={`/${lang}/blog/details`}>Blog Details</a></li>
-                </ul>
-              </li> -->
+              </li>
               <li class="menu-item-has-children">
                 <a>Pages</a>
                 <ul>
